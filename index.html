@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<style id="fsb-inline-css" type="text/css">.navbar-nav:not([data-sm-skip]) .dropdown-item{white-space:normal}:root{--blue:#2880BA;--indigo:#6610f2;--purple:#4f0090;--pink:#e83e8c;--red:#ff0000;--orange:#f2802c;--yellow:#ffc107;--green:#2d9505;--teal:#20c997;--cyan:#14abb1;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#2880BA;--secondary:#f2802c;--success:#2d9505;--info:#14abb1;--warning:#ffc107;--danger:#ff0000;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:667px;--breakpoint-md:768px;--breakpoint-lg:1024px;--breakpoint-lg-xl:1366px;--breakpoint-xl:1920px;--font-family-sans-serif:"PT Sans Narrow",sans-serif;--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}article,footer,header,main,nav{display:block}body{margin:0;font-family:"PT Serif",serif;font-size:1rem;font-weight:400;line-height:1.4;color:#000;text-align:left;background-color:#fff}h1,h2,h5{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}a{color:#2880ba;text-decoration:none;background-color:transparent}a:not([href]){color:inherit;text-decoration:none}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}[type=button],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}input[type=checkbox]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1,h2,h5{margin-bottom:.5rem;font-family:"PT Sans Narrow",sans-serif;font-weight:700;line-height:1.2}h1{font-size:2.488em}h2{font-size:2.074em}h5{font-size:1.2em}.img-fluid{max-width:100%;height:auto}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;max-width:440px}.container{max-width:440px}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-12,.col-md-12,.col-md-3,.col-md-6,.col-md-8{position:relative;width:100%;padding-right:15px;padding-left:15px}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.form-control{display:block;width:100%;height:calc(1.4em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.4;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem}.form-control::-ms-expand{background-color:transparent;border:0}.form-control:-moz-focusring{color:transparent;text-shadow:0 0 0 #495057}.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1}.form-control::-moz-placeholder{color:#6c757d;opacity:1}.form-control:-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::-ms-input-placeholder{color:#6c757d;opacity:1}.form-group{margin-bottom:1rem}.form-check{position:relative;display:block;padding-left:1.25rem}.form-check-input{position:absolute;margin-top:.3rem;margin-left:-1.25rem}.form-check-label{margin-bottom:0}.invalid-feedback{display:none;width:100%;margin-top:.25rem;font-size:80%;color:red}.fade:not(.show){opacity:0}.collapse:not(.show){display:none}.dropdown{position:relative}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#000;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}.dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.nav-link{display:block;padding:.5rem 1rem}.navbar{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:.5rem 1rem}.navbar .container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:.325rem;padding-bottom:.325rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static;float:none}.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:no-repeat center center;background-size:100% 100%}.navbar-light .navbar-brand{color:rgba(255,255,255,.9)}.navbar-light .navbar-nav .nav-link{color:#fff}.navbar-light .navbar-toggler{color:#fff;border-color:rgba(255,255,255,0)}.modal{position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;outline:0}.modal-dialog{position:relative;width:auto;margin:.5rem}.modal.fade .modal-dialog{-webkit-transform:translate(0,-50px);transform:translate(0,-50px)}.modal-dialog-centered{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-height:calc(100% - 1rem)}.modal-dialog-centered::before{display:block;height:calc(100vh - 1rem);height:-webkit-min-content;height:-moz-min-content;height:min-content;content:""}.modal-content{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;outline:0}.modal-title{margin-bottom:0;line-height:1.4}.modal-body{position:relative;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem}.spinner-border{display:inline-block;width:2rem;height:2rem;vertical-align:text-bottom;border:.25em solid currentColor;border-right-color:transparent;border-radius:50%;-webkit-animation:spinner-border .75s linear infinite;animation:spinner-border .75s linear infinite}.spinner-border-sm{width:1rem;height:1rem;border-width:.2em}.clearfix::after{display:block;clear:both;content:""}.d-none{display:none!important}.d-block{display:block!important}.justify-content-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.mt-3{margin-top:1rem!important}.mb-3{margin-bottom:1rem!important}.mx-5{margin-right:3rem!important}.mx-5{margin-left:3rem!important}.mr-auto,.mx-auto{margin-right:auto!important}.mx-auto{margin-left:auto!important}.text-center{text-align:center!important}article{-ms-word-wrap:break-word;word-wrap:break-word}.aligncenter{display:block;margin:1em auto}.fit-redesign-site-header.navbar.navbar-light{padding:0;-webkit-box-shadow:0 6px 4px 0 rgba(0,0,0,.3);box-shadow:0 6px 4px 0 rgba(0,0,0,.3)}.fit-redesign-site-header.navbar.navbar-light .site-title{margin-bottom:0}.fit-redesign-site-header.navbar.navbar-light .site-title img{min-width:250px;height:35px}.fit-redesign-site-header.navbar.navbar-light .navbar-toggler{background-color:#2880ba;-webkit-box-shadow:none;box-shadow:none;border-radius:0;color:#fff;height:72px;min-width:44px}.fit-redesign-site-header.navbar.navbar-light .navbar-toggler .navbar-toggler-icon{width:.9em;height:.9em}.fit-redesign-site-header.navbar.navbar-light .navbar-nav>li{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;margin-bottom:15px}.fit-redesign-site-header.navbar.navbar-light .navbar-nav>li.dropdown{border-top:1px solid #fff;border-bottom:1px solid #fff}.fit-redesign-site-header.navbar.navbar-light .navbar-nav>li a.nav-link{padding:.25rem;text-decoration:none;font-size:1.3rem}.fit-redesign-site-header.navbar.navbar-light .navbar-collapse{background-color:#2880ba;padding:20px 50px}.fit-redesign-site-header.navbar.navbar-light ul.dropdown-menu{display:block;border-radius:0;border-width:0;background-color:#2880ba}.fit-redesign-site-header.navbar.navbar-light ul.dropdown-menu li a.dropdown-item{padding:.25rem;text-decoration:none;color:#fff}#fit-header-subscribe-desktop{display:none}#fit-header-subscribe-mobile{display:block;padding:3px 5px;text-align:center}#fit-header-subscribe-mobile span{color:#000}#fit-header-subscribe-mobile span:after{content:"";position:absolute;background-size:12px 12px;border-radius:20px;display:inline-block;width:20px;height:20px;margin-left:2px}#fit-header-subscribe-modal .modal-content{border-radius:0}#fit-header-subscribe-modal .close{background:0 0;color:#000;text-shadow:none;-webkit-box-shadow:none;box-shadow:none;line-height:1em;font-size:2rem;padding:1rem 1rem;margin:-1rem -1rem -1rem auto;position:absolute;top:15px;right:15px}#fit-header-subscribe-modal label{font-size:17px}.site-inner{padding:4rem 0;padding-top:24px}.entry .entry-title{margin-bottom:16px}.single .entry{margin-bottom:2rem}.fit-redesign-breadcrumbs p{font-family:"PT Sans Caption",sans-serif;font-weight:700;font-size:.8em}.fit-redesign-breadcrumbs p a{color:#000;text-decoration:none}.content-disclosure{font-size:75%;background:#dbdbdb;line-height:1.2;padding:10px;margin:10px 0 10px 0}#fit-advertiser-disclosure .modal-content{border-radius:0;background:#2880ba;border-color:#2880ba;color:#fff}#fit-advertiser-disclosure .modal-content a{color:#fff}#fit-advertiser-disclosure .modal-title{margin-bottom:20px}body.single main.content .entry-content h2{font-weight:700}.related-posts img{max-width:100%;height:auto}.footer-widgets .site-footer-logo img{width:65px;margin-bottom:20px;margin-left:auto;margin-right:auto}.back-to-top{position:fixed;bottom:70px;right:0;border-radius:3px 0 0 3px;background-color:#f2f2f2;font-size:.8rem;padding:.9em .6em;color:#000;display:none;text-decoration:none}img{max-width:100%;height:auto}.wrap{max-width:1240px;margin:0 auto}.text-smaller{font-size:70%}iframe{max-width:100%}.button,button,input[type=submit]{line-height:20px;padding-top:10px;padding-bottom:10px}.button,button,input[type=submit]{background-color:#f2802c;border:none;border-radius:4px;-webkit-box-shadow:none;box-shadow:none;color:#fff;display:inline-block;font-family:"PT Sans Caption",sans-serif;font-size:15px;font-weight:300;line-height:41px;min-width:130px;padding:0 20px;text-align:center;text-decoration:none;width:auto;-webkit-appearance:none;display:inline-block;}.button.button-invert{color:#fff;text-decoration:none}.button.button-invert{background-color:#2880ba;}button{font-family:"PT Sans Caption",sans-serif}input[type=submit]{font-family:"PT Sans Caption",sans-serif}h1,h2,h5{margin-bottom:16px}h3 a{font-family:"PT Sans Narrow",sans-serif}a{font-family:"PT Sans Caption",sans-serif;font-weight:700;text-decoration:underline}.entry-content p{margin-bottom:26px}ul li.nav-item{padding-bottom:0}a.nav-link{text-decoration:none}.fit-icomoon{display:inline-block;padding-left:3px;padding-right:3px}.fit-icomoon svg{height:18px;width:auto}.fit-icomoon svg path{fill:currentColor}.fit-redesign-author-box{font-family:"PT Sans Caption",sans-serif;font-size:.8rem;min-height:45px;display:block}.fit-redesign-author-box p{font-size:.8rem}.fit-redesign-author-box-inner{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px}.fit-redesign-author-box-avatar{width:45px;-ms-flex-preferred-size:auto;flex-basis:auto;-ms-flex-negative:0;flex-shrink:0}.fit-redesign-author-box .avatar{border-radius:50%}.fit-redesign-author-box .fit-redesign-author-box-title{margin-left:10px;margin-bottom:0}.author-box-inner .avatar{border-radius:50%;position:relative;top:auto;left:auto;float:none}@media (min-width:667px){.container{max-width:540px}.container{max-width:540px}.modal-dialog{max-width:500px;margin:1.75rem auto}.modal-dialog-centered{min-height:calc(100% - 3.5rem)}.modal-dialog-centered::before{height:calc(100vh - 3.5rem);height:-webkit-min-content;height:-moz-min-content;height:min-content}.aligncenter{margin-right:auto;margin-left:auto}img.aligncenter{margin:5px auto}body{font-size:17.07px}li,p{font-size:16px}}@media (min-width:768px){.container{max-width:720px}.container{max-width:720px}.col-md-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-8{-webkit-box-flex:0;-ms-flex:0 0 66.66667%;flex:0 0 66.66667%;max-width:66.66667%}.col-md-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset-md-3{margin-left:25%}.d-md-block{display:block!important}.fit-redesign-author-box{margin-left:33.3333333%;padding-left:15px}.footer-widgets .site-footer-logo img{margin-left:0;margin-right:0}body{font-size:18.22px}li,p{font-size:17.07px}.author-box-inner .avatar{position:absolute;top:0;left:0}}@media (min-width:1024px){.container{max-width:1080px}.container{max-width:1080px}.navbar-expand-lg{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-lg .navbar-nav{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg>.container{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-lg .navbar-collapse{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}.modal-lg{max-width:800px}.mx-lg-5{margin-right:3rem!important}.mx-lg-5{margin-left:3rem!important}.px-lg-5{padding-right:3rem!important}.px-lg-5{padding-left:3rem!important}.fit-redesign-site-header.navbar.navbar-light{padding-left:10px;padding-right:10px}.fit-redesign-site-header.navbar.navbar-light .navbar-collapse{background-color:#fff;padding-right:0}.fit-redesign-site-header.navbar.navbar-light .navbar-collapse .navbar-nav{position:relative}.fit-redesign-site-header.navbar.navbar-light .navbar-nav>li{border-top:none;border-bottom:none;margin-bottom:0}.fit-redesign-site-header.navbar.navbar-light ul.dropdown-menu{display:none;border-top:18px solid #fff;background-color:#2880ba;-webkit-column-count:2;-moz-column-count:2;column-count:2;min-width:500px;right:0;left:auto}.fit-redesign-site-header.navbar.navbar-light ul.dropdown-menu li a.dropdown-item{padding:.25rem 1.5rem;font-size:1rem}.fit-redesign-site-header.navbar.navbar-light li.nav-item a.nav-link{font-size:1rem;padding-left:1rem;padding-right:1rem;color:#000}.fit-redesign-site-header.navbar.navbar-light li.nav-item:last-of-type{padding-right:0}.fit-redesign-site-header.navbar.navbar-light li.nav-item.dropdown{position:initial;padding-right:1em}.fit-redesign-site-header.navbar.navbar-light li.nav-item.dropdown .nav-link:after{content:"";display:inline-block;width:10px;height:10px;margin-left:0;-webkit-transform:translate(10px,-2px);transform:translate(10px,-2px)}#fit-header-subscribe-desktop{display:block}#fit-header-subscribe-mobile{display:none}#fit-header-subscribe-modal .form-check-input{margin-top:.6rem}body{font-size:19.44px}li,p{font-size:17.07px}}@media (min-width:1366px){.container{max-width:1300px}.container{max-width:1300px}body{font-size:20.74px}li,p{font-size:19.44px}}@media (max-width:1023.98px){.navbar-expand-lg>.container{padding-right:0;padding-left:0}.fit-redesign-site-header.navbar.navbar-light .wrap{max-width:100%}.fit-redesign-site-header.navbar.navbar-light .navbar-nav li:last-of-type{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}}@-webkit-keyframes spinner-border{to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spinner-border{to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}</style><title>31 Tips for Buying Your First Rental Property From the Pros</title>
+
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="31 Tips for Buying Your First Rental Property From the Pros" />
+<meta property="og:description" content="Buying rental property is a significant investment and can be a lucrative one. However, take it from the professionals that you’ll need to take some precautions. Do your research, take your time, and read the tips we have provided from nationwide pros in the real estate industry on buying your first rental property. Here are..." />
+<meta property="og:url" content="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/" />
+<meta property="og:site_name" content="Fit Small Business" />
+<meta property="article:tag" content="REI Loan Quiz Popup - Main" />
+<meta property="article:tag" content="Tips from the Pros" />
+<meta property="article:section" content="Real Estate Investing" />
+<meta property="article:published_time" content="2020-03-11T09:30:56+00:00" />
+<meta property="article:modified_time" content="2020-06-17T05:22:32+00:00" />
+<meta property="og:updated_time" content="2020-06-17T05:22:32+00:00" />
+<meta property="og:image" content="https://fitsmallbusiness.com/wp-content/uploads/2018/01/28-Tips-for-Buying-Your-First-Rental-Property-from-the-Pros.png" />
+<meta property="og:image:secure_url" content="https://fitsmallbusiness.com/wp-content/uploads/2018/01/28-Tips-for-Buying-Your-First-Rental-Property-from-the-Pros.png" />
+<meta property="og:image:width" content="900" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Buying rental property is a significant investment and can be a lucrative one. However, take it from the professionals that you’ll need to take some precautions. Do your research, take your time, and read the tips we have provided from nationwide pros in the real estate industry on buying your first rental property. Here are..." />
+<meta name="twitter:title" content="31 Tips for Buying Your First Rental Property From the Pros" />
+<meta name="twitter:image" content="https://fitsmallbusiness.com/wp-content/uploads/2018/01/28-Tips-for-Buying-Your-First-Rental-Property-from-the-Pros.png" />
+
+<link rel='dns-prefetch' href='//fitsmallbusiness.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><link rel="preconnect" href="https://connect.facebook.net" crossorigin><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='fsb-css' href='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/css/app.css?ver=0.4.21' type='text/css' media='all' /><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='auth0-widget' href='https://fitsmallbusiness.com/wp-content/plugins/auth0/assets/css/main.css?ver=5.4.1' type='text/css' media='all' /><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='fit-campaigns-public-css' href='https://fitsmallbusiness.com/wp-content/plugins/fit-campaign-plugin/assets/css/fit-campaigns-public.css?ver=0.5.9' type='text/css' media='screen' /><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='fit-link-scanner' href='https://fitsmallbusiness.com/wp-content/plugins/fit-link-scanner/public/css/fit-link-scanner-public.css?ver=1.0.0' type='text/css' media='all' /><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='fit-table-public' href='https://fitsmallbusiness.com/wp-content/plugins/fit-table-plugin/assets/css/table-public.css?ver=0.2.3' type='text/css' media='all' /><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='fsb-gfont-css' href='https://fonts.googleapis.com/css?family=PT+Sans+Caption%3A400%2C700%7CPT+Sans+Narrow%3A700%7CPT+Serif%3A400%2C700&#038;display=swap&#038;ver=5.4.1' type='text/css' media='all' /><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='fsb-select2' href='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/css//select2.min.css?ver=0.4.21' type='text/css' media='all' /><script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/plugins/fit-link-scanner/public/js/fit-link-scanner-public.js?ver=1.0.0'></script>
+<link rel='https://api.w.org/' href='https://fitsmallbusiness.com/wp-json/' />
+<link rel="alternate" type="application/json+oembed" href="https://fitsmallbusiness.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://fitsmallbusiness.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F&#038;format=xml" />
+<meta name="sailthru.title" content="31 Tips for Buying Your First Rental Property From the Pros" /><meta name="sailthru.description" content="Buying rental property is a significant investment and can be a lucrative one. However, take it from the professionals that you’ll need to take some precautions. Do your research, take your time, and read the tips we have provided from nationwide pros in the real estate industry on buying your first rental property. Here are..." /><meta name="sailthru.date" content="2020-03-11 09:30:56" /><meta name="sailthru.author" content="Tricia Tetreault" /><meta name="sailthru.author_url" content="https://fitsmallbusiness.com/author/ttetreaultfitsmallbusiness-com/" /><meta name="sailthru.image.full" content="https://fitsmallbusiness.com/wp-content/uploads/2018/01/28-Tips-for-Buying-Your-First-Rental-Property-from-the-Pros.png" /><meta name="sailthru.image.thumb" content="https://fitsmallbusiness.com/wp-content/uploads/2018/01/28-Tips-for-Buying-Your-First-Rental-Property-from-the-Pros-150x150.png" /><meta name="sailthru.tags" content="Real Estate Investing, Buying and Selling, Buy Rental Property, Rental Property" /><meta name="sailthru.primary_category" content="Real Estate Investing" /><meta name="ahrefs-site-verification" content="2f45b86cf7fcfb21161f192c2fb893d9c3dce383449e1676bc3384836da38198">
+<style type="text/css">
+.fresh-about--writer-img img { top:0; }
+#ninja_forms_form_1642_response_msg { color:#fff!important; }
+.fit-global-alert {
+    background-color: #DB5C56 !important;
+}</style>
+<meta name="p:domain_verify" content="07d95dacb968774fc7766d788e77c0dc" />
+
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','__gaTracker');
+   __gaTracker('create', 'UA-41686408-1', 'auto', {'allowLinker':true});
+   __gaTracker('set', 'forceSSL', true);
+   __gaTracker('require', 'displayfeatures');
+   __gaTracker('require', 'linker');
+	__gaTracker('linker:autoLink', ['reviews.fitsmallbusiness.com']);
+        __gaTracker('set', 'dimension2', 'Real Estate Investing');
+     __gaTracker('set', 'dimension5', 'Real Estate Investing,Tip List');
+     __gaTracker('set', 'dimension6', 'Rental Property');
+          __gaTracker('set', 'dimension3', 'REI Loan Quiz Popup - Main');
+          __gaTracker('set', 'dimension1', "Tricia Tetreault");
+          __gaTracker('set', 'dimension4', '2020-03-11');
+        __gaTracker('require', 'GTM-PCBKS4W');
+   __gaTracker('send', 'pageview');
+ </script>
+
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', 'f29a2664ae53481b841b37483e1b79ef');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/f29a2664ae53481b841b37483e1b79ef/pixel?tag=ViewContent&noscript=1"/></noscript>
+
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"ItemList","itemListElement":[{"@type":"SiteNavigationElement","position":1,"name":"Marketing","description":"Learn the latest small business marketing tactics. From Facebook and Google, to more traditional advertising tactics like TV &amp; Radio, we've got you covered.","url":"https://fitsmallbusiness.com/marketing/"},{"@type":"SiteNavigationElement","position":2,"name":"Financing","description":"Everything you need to know about financing for your small business from SBA Loans, to commercial real estate loans, to working capital loans &amp; more.","url":"https://fitsmallbusiness.com/financing/"},{"@type":"SiteNavigationElement","position":3,"name":"Accounting","description":"Everything you need to know about small business accounting from invoicing and bookkeeping to Quickbooks and Xero tutorials and more!","url":"https://fitsmallbusiness.com/accounting/"},{"@type":"SiteNavigationElement","position":4,"name":"HR","description":"All the information you need on small business HR from recruiting and hiring to training and managing to finding the best HR software an services.","url":"https://fitsmallbusiness.com/hr/"},{"@type":"SiteNavigationElement","position":5,"name":"Retail","description":"Learn how to market and grow your retail business. From choosing a location to planning your store layout to maximize sales, we&#039;ve got you covered.","url":"https://fitsmallbusiness.com/retail/"},{"@type":"SiteNavigationElement","position":6,"name":"Ecommerce","description":"All the information you need to get started in Ecommerce from how to setup an Ecommerce website, to how to handle order fulfillment, to how to market.","url":"https://fitsmallbusiness.com/ecommerce/"},{"@type":"SiteNavigationElement","position":7,"name":"Realtors","description":"All the information you need to start, market, and grow your real estate business. Join the over 100,000 Realtors reading our content each month.","url":"https://fitsmallbusiness.com/real-estate/"},{"@type":"SiteNavigationElement","position":8,"name":"Business Law","description":"All the information small business owners need to know about business law, from how to structure your business to how to avoid getting sued.","url":"https://fitsmallbusiness.com/business-law/"},{"@type":"SiteNavigationElement","position":9,"name":"Running a Business","url":"https://fitsmallbusiness.com/running-a-business/"},{"@type":"SiteNavigationElement","position":10,"name":"Sales","description":"Want to become a better sales person or sales manager? Read our tips and how to guides from top salespeople and start acquiring more customers today!","url":"https://fitsmallbusiness.com/sales/"},{"@type":"SiteNavigationElement","position":11,"name":"Starting a Business","description":"Thinking about starting your own business? We&#039;ve got you covered. Everything from coming up with the perfect idea, to startup financing, to business plans.","url":"https://fitsmallbusiness.com/starting-a-business/"},{"@type":"SiteNavigationElement","position":12,"name":"Buyers Guides","description":"Over 150 buyer&#039;s guides covering everything from CRM software to office chairs. Let us help you make more informed purchasing decisions for your business.","url":"https://fitsmallbusiness.com/buyers-guide/"},{"@type":"SiteNavigationElement","position":13,"name":"Company Reviews","description":"The information you need to make informed purchasing decisions for your small business. 100&#039;s of reviews covering everything from CRM to business phones.","url":"https://fitsmallbusiness.com/reviews/"},{"@type":"SiteNavigationElement","position":14,"name":"Glossary","description":"A glossary of business terms and products defined. From marketing to finance and much more. We cover everything you need to know as a business owner.","url":"https://fitsmallbusiness.com/glossary/"},{"@type":"SiteNavigationElement","position":15,"name":"About Us","description":"We are on a mission to simplify the day-to-day process of running a business by providing you with the information you need to succeed. Learn more now.","url":"https://fitsmallbusiness.com/about-us/"},{"@type":"SiteNavigationElement","position":16,"name":"We're Hiring","url":"https://fitsmallbusiness.com/were-hiring/"}]}</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","headline":"31 Tips for Buying Your First Rental Property From the Pros","mainEntityOfPage":"https://fitsmallbusiness.com/buying-your-first-rental-property-tips/","publisher":{"@type":"Organization","name":"Fit Small Business","url":"https://fitsmallbusiness.com","logo":{"@type":"ImageObject","url":"https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/images/logo.png","width":"395px","height":"58px"}},"url":"https://fitsmallbusiness.com/buying-your-first-rental-property-tips/","datePublished":"2020-03-11","dateModified":"2020-06-17","description":"","image":"https://fitsmallbusiness.com/wp-content/uploads/2018/01/28-Tips-for-Buying-Your-First-Rental-Property-from-the-Pros.png","genre":"Real Estate Investing","author":[{"@type":"Person","name":"Tricia Tetreault","url":"https://fitsmallbusiness.com/author/ttetreaultfitsmallbusiness-com/","image":"https://secure.gravatar.com/avatar/6a6419ec9040ba26d36a2701afb5db2b?s=96&d=blank&r=g"}]}</script><meta class="swiftype" name="st_search_description" data-type="string" content="Buying rental property is a significant investment and can be a lucrative one. However, take it from the professionals that you’ll need to take some precautions. Do your research, take your time, and read the tips we have provided from nationwide pros in the real estate industry on buying your first rental property. Here are..." /><meta class="swiftype" name="st_featured_image" data-type="enum" content="https://fitsmallbusiness.com/wp-content/uploads/2018/01/28-Tips-for-Buying-Your-First-Rental-Property-from-the-Pros.png" /><meta class="swiftype" name="st_author" data-type="string" content="Tricia Tetreault" /><meta class="swiftype" name="st_categories" data-type="string" content="Real Estate Investing" /><meta class="swiftype" name="st_categories" data-type="string" content="Rental Property" /><meta class="swiftype" name="st_categories" data-type="string" content="Tip List" /><link rel="icon" href="https://fitsmallbusiness.com/wp-content/uploads/2015/12/cropped-favicon-5121-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://fitsmallbusiness.com/wp-content/uploads/2015/12/cropped-favicon-5121-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://fitsmallbusiness.com/wp-content/uploads/2015/12/cropped-favicon-5121-180x180.png" />
+<meta name="msapplication-TileImage" content="https://fitsmallbusiness.com/wp-content/uploads/2015/12/cropped-favicon-5121-270x270.png" />
+<style type="text/css" id="wp-custom-css">
+			.tablepress thead th, .tablepress tfoot th {
+background-color: #d9edf7 !important;
+	font-size: 16px;
+}
+
+@media (min-width: 800px) {
+.fsb-floating-header .button {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+}
+
+.menu-business-credit-cards-menu-container .current-menu-item a {
+	color:#0085c9!important;
+	font-weight:normal!important;
+}
+
+
+iframe#twitter-widget-0{
+	height:400px !important;
+}
+
+	@media(min-width:800px) and (max-width: 1350px){
+		
+body.single-post.content-sidebar main.content.col-md-8 article.entry{
+		padding-left: 60px;
+	}
+}
+
+.fit-omv2-button-no { background:#666!important; border-color:#666!important; }
+
+.postid-779472 #fit_sailthru_related_posts { display:none!important; }
+
+.postid-779472 .related-posts { display:none!important; }		</style>
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body class="post-template-default single single-post postid-156130 single-format-standard full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-visible"><a name="top"></a><iframe src="https://go.performi.com/track/view/?p=%2Fbuying-your-first-rental-property-tips%2F" data-no-lazy="1" style="display: none;"></iframe><div class="site-container"> <a id="fit-header-subscribe-mobile" href="#" class="" data-target="#fit-header-subscribe-modal" data-toggle="modal"><span>Subscribe to our Newsletters</span></a>
+<header class="site-header navbar navbar-light navbar-expand-lg fit-redesign-site-header">
+<div class="wrap container">
+<div class="navbar-brand">
+<div class="site-title"><a href="https://fitsmallbusiness.com/"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="FitSmallBusiness" class="img-fluid d-block mx-auto" data-lazy-src="https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/images/logo-2020.svg" /><noscript><img src="https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/images/logo-2020.svg" alt="FitSmallBusiness" class="img-fluid d-block mx-auto" /></noscript></a></div>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
+<div class="sr-only">Menu</div>
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="header-navbar" class="collapse navbar-collapse justify-content-end">
+<nav class="nav-header">
+<ul id="menu-header-menu" class="navbar-nav mr-auto"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-75806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-75806 nav-item dropdown"><a title="Categories" href="#" class="nav-link">Categories</a>
+<ul role="menu" class=" dropdown-menu">
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584154" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584154 nav-item"><a title="Accounting" href="https://fitsmallbusiness.com/accounting/" class="dropdown-item">Accounting</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584153" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584153 nav-item"><a title="Banking" href="https://fitsmallbusiness.com/banking/" class="dropdown-item">Banking</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584150 nav-item"><a title="Business Law" href="https://fitsmallbusiness.com/business-law/" class="dropdown-item">Business Law</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584160" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584160 nav-item"><a title="Business Travel" href="https://fitsmallbusiness.com/business-travel/" class="dropdown-item">Business Travel</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584156" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584156 nav-item"><a title="Buying and Selling a Business" href="https://fitsmallbusiness.com/buying-and-selling-a-business/" class="dropdown-item">Buying and Selling a Business</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584151" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584151 nav-item"><a title="Careers" href="https://fitsmallbusiness.com/careers/" class="dropdown-item">Careers</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584161" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584161 nav-item"><a title="Credit Cards" href="https://fitsmallbusiness.com/credit-cards/" class="dropdown-item">Credit Cards</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584152" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584152 nav-item"><a title="Financing" href="https://fitsmallbusiness.com/financing/" class="dropdown-item">Financing</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584144" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584144 nav-item"><a title="Human Resources" href="https://fitsmallbusiness.com/human-resources/" class="dropdown-item">Human Resources</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584159" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584159 nav-item"><a title="Insurance" href="https://fitsmallbusiness.com/insurance/" class="dropdown-item">Insurance</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584142" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584142 nav-item"><a title="Marketing" href="https://fitsmallbusiness.com/marketing/" class="dropdown-item">Marketing</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584149" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584149 nav-item"><a title="Office" href="https://fitsmallbusiness.com/office/" class="dropdown-item">Office</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584146" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584146 nav-item"><a title="Online Business" href="https://fitsmallbusiness.com/online-business/" class="dropdown-item">Online Business</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584155" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584155 nav-item"><a title="Personal Finance" href="https://fitsmallbusiness.com/personal-finance/" class="dropdown-item">Personal Finance</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584147" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584147 nav-item"><a title="Project Management" href="https://fitsmallbusiness.com/project-management/" class="dropdown-item">Project Management</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584158" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-584158 nav-item active"><a title="Real Estate Investing" href="https://fitsmallbusiness.com/real-estate-investing/" class="dropdown-item">Real Estate Investing</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584143" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584143 nav-item"><a title="Real Estate" href="https://fitsmallbusiness.com/real-estate/" class="dropdown-item">Real Estate</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584145" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584145 nav-item"><a title="Retail" href="https://fitsmallbusiness.com/retail/" class="dropdown-item">Retail</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584141" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584141 nav-item"><a title="Sales" href="https://fitsmallbusiness.com/sales/" class="dropdown-item">Sales</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584148" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584148 nav-item"><a title="Starting a Business" href="https://fitsmallbusiness.com/starting-a-business/" class="dropdown-item">Starting a Business</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-584157" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-584157 nav-item"><a title="Taxes" href="https://fitsmallbusiness.com/taxes/" class="dropdown-item">Taxes</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-75816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75816 nav-item"><a title="Reviews" href="https://reviews.fitsmallbusiness.com/" class="nav-link">Reviews</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-75818" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75818 nav-item"><a title="About" href="https://fitsmallbusiness.com/about-us/" class="nav-link">About</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-726273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-726273 nav-item"><a title="Search" href="https://fitsmallbusiness.com/?s=" class="nav-link">Search</a></li>
+</ul> </nav>
+</div>
+<a id="fit-header-subscribe-desktop" href="#" class="btn btn-primary button button-invert" data-target="#fit-header-subscribe-modal" data-toggle="modal">Subscribe</a>
+</div>
+</header>
+<div class="site-inner"><div class="wrap container"><div class="content-sidebar-wrap row"><main class="content col-md-12"><article class="post-156130 post type-post status-publish format-standard has-post-thumbnail category-real-estate-investing category-rental-property category-tip-list tag-rei-loan-quiz-popup-main tag-tips-from-the-pros entry row"><header class="entry-header col-md-8 offset-md-3"><div class="fit-advertiser-button d-block mb-3">
+<a href="#" data-toggle="modal" data-target="#fit-advertiser-disclosure" class="text-smaller">Advertiser Disclosure</a>
+</div>
+<div class="fit-redesign-breadcrumbs">
+<p><a href="https://fitsmallbusiness.com/real-estate-investing/">Real Estate Investing</a> &gt; <a href="https://fitsmallbusiness.com/real-estate-investing/rental-property/">Rental Property</a> | <a href="https://fitsmallbusiness.com/tip-list/">Tip List</a></p></div>
+<h1 class="entry-title">31 Tips for Buying Your First Rental Property From the Pros</h1>
+<div class="content-disclosure">
+We have partnerships with some of the companies featured in this article. When you click on links to those sites, our company makes money. These partnerships help support our site so we can keep bringing you the best answers to your questions.
+</div>
+</header><div class="col-md-3">
+<div class="fit-redesign-author-box">
+<div class="fit-redesign-author-box-inner"><a href="https://fitsmallbusiness.com/author/ttetreaultfitsmallbusiness-com/" class="fit-redesign-author-box-avatar"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2045%2045'%3E%3C/svg%3E" class="avatar avatar-45" height="45" width="45" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/08/Tricia-Tetreault.jpg" /><noscript><img alt="" src="https://fitsmallbusiness.com/wp-content/uploads/2020/08/Tricia-Tetreault.jpg" class="avatar avatar-45" height="45" width="45"/></noscript></a><p class="fit-redesign-author-box-title">By <a href="https://fitsmallbusiness.com/author/ttetreaultfitsmallbusiness-com/">Tricia Tetreault</a> on March 11, 2020</p></div><div class="d-none d-md-block"><p>Tricia has nearly two decades of experience in commercial and federal government lending. Her expertise is highlighted throughout <a href="https://fitsmallbusiness.com/financing/business-loans/">small business loan</a> content on Fit Small Business.</p>
+</div></div>
+</div><div class="entry-content clearfix col-md-8"><p>Buying rental property is a significant investment and can be a lucrative one. However, take it from the professionals that you’ll need to take some precautions. Do your research, take your time, and read the tips we have provided from nationwide pros in the real estate industry on buying your first rental property.</p>
+<p>Here are 31 tips for buying your first rental property from the pros.</p>
+<hr />
+<p><a href="https://www.brooklaw.edu/" target="_blank" rel="noopener "><img class="alignleft wp-image-643223 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of David Reiss, Brooklyn Law School" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-david-reiss-brooklyn-law-school.png 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-david-reiss-brooklyn-law-school-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-david-reiss-brooklyn-law-school.png" /><noscript><img class="alignleft wp-image-643223 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-david-reiss-brooklyn-law-school.png" alt="Headshot of David Reiss, Brooklyn Law School" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-david-reiss-brooklyn-law-school.png 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-david-reiss-brooklyn-law-school-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>1. Use Leverage to Buy the Property</h3>
+<h5>David Reiss, Professor of Law, <a href="https://www.brooklaw.edu/" target="_blank" rel="noopener ">Brooklyn Law School</a></h5>
+<p>Potential real estate investors should make sure to understand the mortgage market. If you get the right mortgage, it could help keep your costs low and reduce uncertainty about the property’s cash flow. Using the leverage of a mortgage will free up some of your cash so that you can save it for repairs or a future investment. However, a mortgage can be a double-edged sword since there will be financing costs associated with it, so it’s always best to consult with a professional.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="https://theclose.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643224 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Christopher Linsell, Staff Writer and Real Estate Coach, TheClose" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-40.png 512w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-40-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-40-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-40.png" /><noscript><img class="alignleft wp-image-643224 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-40.png" alt="Headshot of Christopher Linsell, Staff Writer and Real Estate Coach, TheClose" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-40.png 512w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-40-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-40-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>2. Invest in Turnkey Real Estate</h3>
+<h5>Christopher Linsell, Staff Writer and Real Estate Coach, <a href="https://theclose.com/" target="_blank" rel="noopener ">The Close</a></h5>
+<p>When looking for the right rental property to purchase, investors face the classic dilemma: go with a property that needs a lot of work but could have a higher rate of return or go with a lower rate of return turnkey property with all the cashflow systems already in place. With a turnkey rental property, you’ve already got a property in great shape, a property manager and tenants lined up. If you aren’t sure where to find a turnkey property; <a href="https://go.performi.com/goto/roofstock" rel="noopener nofollow" class="fitlink" target="_blank">Roofstock</a> can assist you with your search, allowing you to browse properties in up to 40 different rental markets at a wide range of price points and invest in the rental that is right for you.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="https://fitsmallbusiness.com/"><img class="alignleft wp-image-643225 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Michael Cetera, Divisional Managing Editor, FitSmallBusiness" width="200" height="200" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/michael-cetera.jpeg" /><noscript><img class="alignleft wp-image-643225 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/michael-cetera.jpeg" alt="Headshot of Michael Cetera, Divisional Managing Editor, FitSmallBusiness" width="200" height="200" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>3. Line Up Your Financing Early</h3>
+<h5>Michael Cetera, Divisional Managing Editor, <a href="https://fitsmallbusiness.com/">FitSmallBusiness</a></h5>
+<p>If you’ll be using a mortgage when buying your first rental property, it’s important to weigh all your financing options carefully. Should you choose a 15- or 30-year mortgage? A fixed rate or adjustable rate? To better weigh the true cost of your financing options, first-time investors can fill out a short form on <a href="https://go.performi.com/goto/lendingtree" rel="noopener nofollow" class="fitlink" target="_blank">LendingTree</a> and let multiple lenders compete for your loan. Its online marketplace enables you to compare rates and offers quickly to find a good fit.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643226 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Kathy Fettke, Real Wealth Network" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-kathy-fettke-real-wealth-network.jpeg 260w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-kathy-fettke-real-wealth-network-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-kathy-fettke-real-wealth-network.jpeg" /><noscript><img class="alignleft wp-image-643226 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-kathy-fettke-real-wealth-network.jpeg" alt="Headshot of Kathy Fettke, Real Wealth Network" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-kathy-fettke-real-wealth-network.jpeg 260w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-kathy-fettke-real-wealth-network-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>4. Invest in Single-family Homes First</h3>
+<h5>Kathy Fettke, CEO, Real Wealth Network</h5>
+<p>Invest in single-family homes first since it’s the simplest way to get started as a new real estate investor. The upkeep is easier than multifamily or commercial properties. With only a single tenant, there doesn’t tend to be as much wear and tear on the property and, when something breaks, you’ll only need to fix one thing.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://www.manhattanpacificrealty.com/blog/" target="_blank" rel="noopener "><img class="alignleft wp-image-643227 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Richard Haynes, Manhattan Pacific Realty, Inc" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-richard-haynes-manhattan-pacific-real.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-richard-haynes-manhattan-pacific-real-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-richard-haynes-manhattan-pacific-real.jpeg" /><noscript><img class="alignleft wp-image-643227 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-richard-haynes-manhattan-pacific-real.jpeg" alt="Headshot of Richard Haynes, Manhattan Pacific Realty, Inc" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-richard-haynes-manhattan-pacific-real.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-richard-haynes-manhattan-pacific-real-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>5. Invest Enough to Be Cash Flow Positive</h3>
+<h5>Richard Haynes, Broker &amp; Owner, <a href="http://www.manhattanpacificrealty.com/blog/" target="_blank" rel="noopener ">Manhattan Pacific Realty</a></h5>
+<p>First-time rental property buyers should only buy a property that cash flows. The best way to limit your risk and increase your odds of success is to make sure you are putting enough money down to be cashflow positive. There will be unexpected expenses, so leave a margin for error. It also enables you to weather tough economic times. If the property cash flows, the fluctuations of the market are less relevant, and you can hold it for the long term.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="https://www.caponeforyourhome.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643228 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Iris Felder, The Capone For Your Home Team" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-iris-felder-the-capone-for-your-home.png 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-iris-felder-the-capone-for-your-home-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-iris-felder-the-capone-for-your-home.png" /><noscript><img class="alignleft wp-image-643228 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-iris-felder-the-capone-for-your-home.png" alt="Headshot of Iris Felder, The Capone For Your Home Team" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-iris-felder-the-capone-for-your-home.png 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-iris-felder-the-capone-for-your-home-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>6. Focus on Your Return on Investment</h3>
+<h5>Iris Felder, Luxury Sales &amp; Rental Expert, <a href="https://www.caponeforyourhome.com/" target="_blank" rel="noopener ">The Capone For Your Home Team</a></h5>
+<p>Invest in an area that will get a high return on investment. A cap rate of 7% or greater is ideal. You can find some amazing deals in locations that are transitioning or in gentrified areas. To obtain the highest return on investment, you will need to know the area and what houses are selling for in the neighborhood.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="https://www.upkeepmedia.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643229 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Stephen Fox - buying your first rental property" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/stephen-fox-buying-your-first-rental-property.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/stephen-fox-buying-your-first-rental-property-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/stephen-fox-buying-your-first-rental-property.jpeg" /><noscript><img class="alignleft wp-image-643229 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/stephen-fox-buying-your-first-rental-property.jpeg" alt="Headshot of Stephen Fox - buying your first rental property" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/stephen-fox-buying-your-first-rental-property.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/stephen-fox-buying-your-first-rental-property-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>7. Know Your Marketing Strategy</h3>
+<h5>Stephen Fox, Co-founder, <a href="https://www.upkeepmedia.com/" target="_blank" rel="noopener ">Upkeep Media</a></h5>
+<p>If you’re investing in a rental property that’s currently vacant, it’s crucial you find quality tenants as quickly as possible. Before purchasing your rental property, make sure you know your plan of attack for marketing the rental property. A vacant rental property can quickly eat at your cash flow. The best places to advertise your rental property are going to be major online real estate marketplaces.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://www.aehomegroup.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643230 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Jeff Miller, AE Home Group" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-miller-ae-home-group.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-miller-ae-home-group-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-miller-ae-home-group.png" /><noscript><img class="alignleft wp-image-643230 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-miller-ae-home-group.png" alt="Headshot of Jeff Miller, AE Home Group" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-miller-ae-home-group.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-miller-ae-home-group-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>8. Buy What You Know</h3>
+<h5>Jeff Miller, Co-founder, <a href="http://www.aehomegroup.com/" target="_blank" rel="noopener ">AE Home Group</a></h5>
+<p>Invest in a rental property in an area and niche in which you are familiar. Draw from your previous life experiences to gain a competitive advantage. For example, if you’re retired military, then buy a rental property near a local military base for military transfers. If you’re a college alumnus, then buy a student rental near your university’s campus. If you’re a nurse, then buy a rental property for short-term nurses near your hospital.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://www.roomtobreathe.us/" target="_blank" rel="noopener "><img class="alignleft wp-image-643231 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Jessica Dolan, Room to Breathe" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jessica-dolan-room-to-breathe.png 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jessica-dolan-room-to-breathe-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jessica-dolan-room-to-breathe.png" /><noscript><img class="alignleft wp-image-643231 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jessica-dolan-room-to-breathe.png" alt="Headshot of Jessica Dolan, Room to Breathe" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jessica-dolan-room-to-breathe.png 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jessica-dolan-room-to-breathe-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>9. Have a Written Lease in Place</h3>
+<h5>Jessica Dolan, Home Organizer &amp; Stager, <a href="http://www.roomtobreathe.us/" target="_blank" rel="noopener ">Room to Breathe</a></h5>
+<p>Have a very clear lease in place with all the details written out so that there’s no confusion about the tenant’s expectations. The lease should include when the payments are due, what the lease termination fees are, and if pets are allowed. The lease should also include what cleaning the tenant is required to do and if the heat should be left at a certain temperature during the winter.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="https://fitsmallbusiness.com/"><img class="alignleft wp-image-643232 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Tricia Tetreault, Small Business Finance Staff Writer, FitSmallBusiness" width="200" height="200" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-41.png" /><noscript><img class="alignleft wp-image-643232 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/word-image-41.png" alt="Headshot of Tricia Tetreault, Small Business Finance Staff Writer, FitSmallBusiness" width="200" height="200" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>10. Screen Prospective Tenants Thoroughly</h3>
+<h5>Tricia Tetreault, Small Business Finance Staff Writer, <a href="https://fitsmallbusiness.com/" target="_blank" rel="noopener ">FitSmallBusiness</a></h5>
+<p>Properly—and thoroughly—screening potential tenants is vital to making your first rental property a success. Companies like <a href="https://go.performi.com/goto/myrental" rel="noopener nofollow" class="fitlink" target="_blank">MyRental</a> offer a free online application for tenants and a monthly subscription for landlords to verify previous addresses, criminal backgrounds, and eviction history. With tools like these, there’s no excuse for not properly vetting prospective tenants prior to renting to them. This simple step can save you from leasing your rental to someone with a questionable history.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://www.solutions3dhome.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643233 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Don Tepper, Solutions 3D" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-don-tepper-solutions-3d.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-don-tepper-solutions-3d-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-don-tepper-solutions-3d.jpeg" /><noscript><img class="alignleft wp-image-643233 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-don-tepper-solutions-3d.jpeg" alt="Headshot of Don Tepper, Solutions 3D" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-don-tepper-solutions-3d.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-don-tepper-solutions-3d-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>11. Talk to the Neighbors</h3>
+<h5>Don Tepper, Investor &amp; Real Estate Agent, <a href="http://www.solutions3dhome.com/" target="_blank" rel="noopener ">Solutions 3D</a></h5>
+<p>Knock on the neighbors’ doors and talk to them. Explain that you’re considering buying the property and would like to know if they’ve had any difficulties with the tenants or the owner. While you’re there, drive around the neighborhood and check out the property during the day, the weekend, and in the evening to see what the neighborhood is like.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://x483352.yourkwagent.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643234 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Katie Messenger, Keller Williams" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-katie-messenger-keller-williams.png 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-katie-messenger-keller-williams-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-katie-messenger-keller-williams.png" /><noscript><img class="alignleft wp-image-643234 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-katie-messenger-keller-williams.png" alt="Headshot of Katie Messenger, Keller Williams" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-katie-messenger-keller-williams.png 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-katie-messenger-keller-williams-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>12. Work With a Property Management Company</h3>
+<h5>Katie Messenger, Real Estate Agent, <a href="http://x483352.yourkwagent.com/" target="_blank" rel="noopener ">Keller Williams</a></h5>
+<p>Think realistically about your time. Do you have the time or desire to answer calls at 2 a.m. for a furnace that stopped working? If the answer is no, then consider hiring a property manager. Like a real estate agent, you’ll want to interview different companies to determine if their services and fees are worth the investment of not having to do background checks, take maintenance calls, and interview tenants yourself.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://acceleratehomes.co.uk/" target="_blank" rel="noopener "><img class="alignleft wp-image-643235 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Tom Davies , Accelerate Homes" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-tom-davies-accelerate-homes.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-tom-davies-accelerate-homes-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-tom-davies-accelerate-homes.png" /><noscript><img class="alignleft wp-image-643235 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-tom-davies-accelerate-homes.png" alt="Headshot of Tom Davies , Accelerate Homes" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-tom-davies-accelerate-homes.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-tom-davies-accelerate-homes-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>13. Purchase a Property With Outdoor Space</h3>
+<h5>Tom Davies, Co-founder, <a href="http://acceleratehomes.co.uk/" target="_blank" rel="noopener ">Accelerate Homes</a></h5>
+<p>A huge percentage of prospective renters want to enjoy a cozy area where they can invite friends over or spend time on their own relaxing. Generally, most tenants aren’t picky about the type of outdoor area but want it to be private, usable, and an area where they can put their personal touches on it with plants, furniture, and decorative lighting.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643236 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Dan Green, Growella" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dan-green-growella.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dan-green-growella-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dan-green-growella.png" /><noscript><img class="alignleft wp-image-643236 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dan-green-growella.png" alt="Headshot of Dan Green, Growella" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dan-green-growella.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dan-green-growella-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>14. Buy a Multifamily Property You Can Live in</h3>
+<h5>Dan Green, Founder, Growella</h5>
+<p>For investors willing to live in their multifamily investment property, an FHA mortgage provides the best combination of interest rate and down payment size. For two- to four-unit properties, Federal Housing Administration (FHA) mortgage rates are roughly 1 percentage point lower than a comparable conventional rate, and the required down payment for the FHA is just 3.5 percent as compared to 25 percent or more.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-338524 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Dennis Shirshikov, Small Business Finance Staff Writer, FitSmallBusiness" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-150x150.png 150w, https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-768x768.png 768w, https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-1024x1024.png 1024w, https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-730x730.png 730w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-300x300.png" /><noscript><img class="alignleft wp-image-338524 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-300x300.png" alt="Headshot of Dennis Shirshikov, Small Business Finance Staff Writer, FitSmallBusiness" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-150x150.png 150w, https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-768x768.png 768w, https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-1024x1024.png 1024w, https://fitsmallbusiness.com/wp-content/uploads/2019/02/word-image-1309-e1550081447431-730x730.png 730w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>15. Accept Rent Payments Online</h3>
+<h5>Dennis Shirshikov, Small Business Finance Staff Writer, <a href="https://fitsmallbusiness.com/">FitSmallBusiness</a></h5>
+<p>Experienced landlords have heard countless—and often very creative—stories of how a tenant’s rent payment ended up being late. To help mediate checks getting lost in the mail, eaten by wild dogs, or blowing out the car window on the way to the mailbox, you can set up online rent collection. With online payment, there are no excuses. Your tenants can pay you instantly with the click of a button and even set up regular automatic payments. Companies like <a href="https://go.performi.com/goto/rentalutions" rel="noopener nofollow" class="fitlink" target="_blank">Avail</a> offer online rent payment as well as full property management software for landlords, helping them market properties, screen tenant, organize leases, and schedule maintenance.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643238 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Rob Stephens, Avalara MyLodgeTax" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax.jpeg 2500w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-300x300.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-1024x1024.jpeg 1024w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-150x150.jpeg 150w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-768x768.jpeg 768w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-1536x1536.jpeg 1536w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-2048x2048.jpeg 2048w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-730x730.jpeg 730w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-830x830.jpeg 830w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax.jpeg" /><noscript><img class="alignleft wp-image-643238 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax.jpeg" alt="Headshot of Rob Stephens, Avalara MyLodgeTax" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax.jpeg 2500w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-300x300.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-1024x1024.jpeg 1024w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-150x150.jpeg 150w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-768x768.jpeg 768w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-1536x1536.jpeg 1536w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-2048x2048.jpeg 2048w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-730x730.jpeg 730w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-rob-stephens-avalara-mylodgetax-830x830.jpeg 830w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>16. Invest in a Vacation Rental Property</h3>
+<h5>Rob Stephens, General Manager, Avalara MyLodgeTax</h5>
+<p>Evaluate a potential vacation rental property and look at comparable rental rates on sites like HomeAway and VRBO. In general, real estate will increase in value over time, but certain markets will experience greater appreciation. Evaluate how the market has performed historically and identify areas of growth that can lead to greater returns. Additionally, ensure that the zoning laws and boundaries in the area allow you to rent out your home to guests.</p>
+<p>For more information, you can read our ultimate guide on <a href="https://fitsmallbusiness.com/how-to-buy-vacation-rental-property/">buying a vacation rental property</a>.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643239 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Jeff Rohde, J Scott Digital" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-rohde-j-scott-digital.jpeg 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-rohde-j-scott-digital-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-rohde-j-scott-digital.jpeg" /><noscript><img class="alignleft wp-image-643239 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-rohde-j-scott-digital.jpeg" alt="Headshot of Jeff Rohde, J Scott Digital" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-rohde-j-scott-digital.jpeg 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-jeff-rohde-j-scott-digital-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>17. Buy a Property Near Apartment Buildings</h3>
+<h5>Jeff Rohde, Founder, J Scott Digital</h5>
+<p>Buy in an area where there are a lot of apartment buildings. There’s a proven demand for rental properties in areas with apartment buildings since renters are always looking for a place to rent that is a move up from a typical apartment. You will be able to meet that demand and rent out your property without spending as much on advertising costs.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643240 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Stacey Corso, HomeUnion" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-stacey-corso-homeunion.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-stacey-corso-homeunion-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-stacey-corso-homeunion.jpeg" /><noscript><img class="alignleft wp-image-643240 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-stacey-corso-homeunion.jpeg" alt="Headshot of Stacey Corso, HomeUnion" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-stacey-corso-homeunion.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-stacey-corso-homeunion-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>18. Balance Your Risk</h3>
+<h5>Stacey Corso, Senior Communications Manager, HomeUnion</h5>
+<p>While real estate values can fluctuate, people still need a place to live when the economy experiences a downturn, which provides investors with a steady income from rental properties. This is why savvy investors understand the unique value of choosing the right passive rental property to balance out your risk. Always look for areas that will have high rental demand, even during downturns.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://www.billingsbestrealestate.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643241 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Nancy Brook, Billings Best Real Estate" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-nancy-brook-billings-best-real-estate.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-nancy-brook-billings-best-real-estate-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-nancy-brook-billings-best-real-estate.jpeg" /><noscript><img class="alignleft wp-image-643241 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-nancy-brook-billings-best-real-estate.jpeg" alt="Headshot of Nancy Brook, Billings Best Real Estate" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-nancy-brook-billings-best-real-estate.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-nancy-brook-billings-best-real-estate-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>19. Look for Properties Nationwide</h3>
+<h5>Nancy Brook, Broker &amp; Investor, <a href="http://www.billingsbestrealestate.com/" target="_blank" rel="noopener ">Billings Best Real Estate</a></h5>
+<p>Consider buying properties in other parts of the country. You may be able to find a property that is much more affordable and provides a much better return on investment. If you go this route, you will want to find a great real estate agent and property manager in that market.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="https://fitsmallbusiness.com/"><img class="alignleft wp-image-643242 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Melanie Patterson" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/melanie-patterson.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/melanie-patterson-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/melanie-patterson.jpeg" /><noscript><img class="alignleft wp-image-643242 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/melanie-patterson.jpeg" alt="Headshot of Melanie Patterson" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/melanie-patterson.jpeg 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/melanie-patterson-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>20. Use Your Retirement Funds for Your Real Estate Investment</h3>
+<h5>Melanie Patterson, Real Estate Investing Staff Writer, <a href="https://fitsmallbusiness.com/">FitSmallBusiness</a></h5>
+<p>If you have savings in an IRA [individual retirement account] or a Solo 401(k) plan, don’t limit your investment options to only stocks and bonds. Use a self-directed retirement account through a provider such as <a href="https://go.performi.com/goto/rocket-dollar-main" rel="noopener nofollow" class="fitlink" target="_blank">Rocket Dollar</a> to diversify your portfolio and invest in real estate, including buying your first rental property. This is a good way to take advantage of tax-deferred retirement funds and get into real estate investing while staying IRS-compliant. Rocket Dollar can get you set up for a $360 registration fee plus $15/month. Schedule a free call today to learn more.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643243 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Lisa Krause, Keller Williams" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-lisa-krause-keller-williams.png 600w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-lisa-krause-keller-williams-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-lisa-krause-keller-williams-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-lisa-krause-keller-williams.png" /><noscript><img class="alignleft wp-image-643243 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-lisa-krause-keller-williams.png" alt="Headshot of Lisa Krause, Keller Williams" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-lisa-krause-keller-williams.png 600w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-lisa-krause-keller-williams-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-lisa-krause-keller-williams-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>21. Know the Rent Control Regulations</h3>
+<h5>Lisa Krause, Real Estate Agent, Keller Williams</h5>
+<p>Be familiar with the specific rent guidelines in the municipality where you are purchasing. The guidelines explain the process for registering the amount of legal rent and how to determine the annual rent increase you can pass on to the tenant. In certain situations, you can apply for additional rental increases like vacancy decontrol or a one-time capital improvement allowance. Knowing up front how much you can charge for rent helps you determine your investment.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://www.phmc.com/coreyvandenberg/" target="_blank" rel="noopener "><img class="alignleft wp-image-643244 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Corey Vandenberg, Platinum Home Mortgage" width="200" height="200" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-corey-vandenberg-platinum-home-mortga.png" /><noscript><img class="alignleft wp-image-643244 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-corey-vandenberg-platinum-home-mortga.png" alt="Headshot of Corey Vandenberg, Platinum Home Mortgage" width="200" height="200" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>22. Get Advice From Other Landlords</h3>
+<h5>Corey Vandenberg, Mortgage Broker, <a href="http://www.phmc.com/coreyvandenberg/" target="_blank" rel="noopener ">Platinum Home Mortgage</a></h5>
+<p>Finding and keeping good tenants is an art all its own. Join a local landlord association or ask someone who has been a landlord for a while and get advice on what to do and what to avoid. This type of information will help you avoid pitfalls that could ruin your first time. Happy renting starts with being well informed.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643245 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Dean Myerow, Las Olas Wealth Management" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dean-myerow-las-olas-wealth-managemen.png 270w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dean-myerow-las-olas-wealth-managemen-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dean-myerow-las-olas-wealth-managemen.png" /><noscript><img class="alignleft wp-image-643245 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dean-myerow-las-olas-wealth-managemen.png" alt="Headshot of Dean Myerow, Las Olas Wealth Management" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dean-myerow-las-olas-wealth-managemen.png 270w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-dean-myerow-las-olas-wealth-managemen-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>23. Have Property Inspections Performed</h3>
+<h5>Dean Myerow, Bond Professional, Las Olas Wealth Management</h5>
+<p>Have a professional perform a radon gas check if you are buying in a part of the country that traditionally might have radon coming up from the foundation. You should also have a sonar scan of the ground outside done if it is an old house and might have an unknown oil tank buried. You don’t want to buy an instant liability if one exists, and it is leaking.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="https://asksethanything.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643246 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Seth Lejeune, Ask Seth Anything" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-seth-lejeune-ask-seth-anything.png 260w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-seth-lejeune-ask-seth-anything-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-seth-lejeune-ask-seth-anything.png" /><noscript><img class="alignleft wp-image-643246 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-seth-lejeune-ask-seth-anything.png" alt="Headshot of Seth Lejeune, Ask Seth Anything" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-seth-lejeune-ask-seth-anything.png 260w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-seth-lejeune-ask-seth-anything-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>24. Buy a Rent-ready Property</h3>
+<h5>Seth Lejeune, Real Estate Agent, <a href="https://asksethanything.com/" target="_blank" rel="noopener ">Ask Seth Anything</a></h5>
+<p>Try to find something that is more or less rent ready. Getting into the investing business doesn’t have to be complicated, but it can be if you buy something that is a total rehab. Unless you have experience renovating houses, find something that is turnkey and can cash flow out the gate. Otherwise, you could get way behind the 8-ball when it comes to renting the property. Never forget the purpose here is to get the thing to produce income.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643247 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Alexandra Axsen, Lake Okanagan Realty Ltd." width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-alexandra-axsen-lake-okanagan-realty.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-alexandra-axsen-lake-okanagan-realty-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-alexandra-axsen-lake-okanagan-realty.png" /><noscript><img class="alignleft wp-image-643247 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-alexandra-axsen-lake-okanagan-realty.png" alt="Headshot of Alexandra Axsen, Lake Okanagan Realty Ltd." width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-alexandra-axsen-lake-okanagan-realty.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-alexandra-axsen-lake-okanagan-realty-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>25. Choose a Location Near Amenities</h3>
+<h5>Alexandra Axsen, Owner &amp; Managing Broker, Lake Okanagan Realty Ltd.</h5>
+<p>Pick a location close to public transit and amenities. Rental properties near universities are ideal locations as most students will rent for the four years they are in university, and their parents will usually provide personal guarantees on the rent.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643248 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Mark Painter, Everguide Financial Group" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-mark-painter-everguide-financial-grou.png 160w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-mark-painter-everguide-financial-grou-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-mark-painter-everguide-financial-grou.png" /><noscript><img class="alignleft wp-image-643248 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-mark-painter-everguide-financial-grou.png" alt="Headshot of Mark Painter, Everguide Financial Group" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-mark-painter-everguide-financial-grou.png 160w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-mark-painter-everguide-financial-grou-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>26. Choose a Property That Is Ideal for Your Target Renter</h3>
+<h5>Mark Painter, Founder &amp; President, EverGuide Financial Group</h5>
+<p>Buy a place and make improvements that cater to the typical renter in that area. You can get the most value by targeting the correct renter in your area like students, young professionals, families, retirees, or vacationers. If you buy a house that would be ideal for families in an area that is predominantly rented by students or young professionals, there is a good chance you are not maximizing value.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643249 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Shane Lee, RealtyHop" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-shane-lee-realtyhop.png 450w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-shane-lee-realtyhop-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-shane-lee-realtyhop-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-shane-lee-realtyhop.png" /><noscript><img class="alignleft wp-image-643249 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-shane-lee-realtyhop.png" alt="Headshot of Shane Lee, RealtyHop" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-shane-lee-realtyhop.png 450w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-shane-lee-realtyhop-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-shane-lee-realtyhop-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>27. Do a Pro Forma Analysis</h3>
+<h5>Shane Lee, Data Analyst, RealtyHop</h5>
+<p>Do a pro forma” analysis on the property you’re looking to buy. Look at similar properties in the same area, how the rents have changed in the past 10 years, and how they are projected to change in the next 10 years. Once you have the projected rent growth and estimated cost on operations and maintenance, you will have a better understanding of how much net income the property would generate, and how much you can make if you were to sell it.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643250 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Steve Pollack, Anchor Loans" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-steve-pollack-anchor-loans.png 396w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-steve-pollack-anchor-loans-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-steve-pollack-anchor-loans-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-steve-pollack-anchor-loans.png" /><noscript><img class="alignleft wp-image-643250 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-steve-pollack-anchor-loans.png" alt="Headshot of Steve Pollack, Anchor Loans" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-steve-pollack-anchor-loans.png 396w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-steve-pollack-anchor-loans-300x300.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-steve-pollack-anchor-loans-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>28. Pay Attention to Economic Cycles</h3>
+<h5>Steve Pollack, CEO &amp; Co-founder, Anchor Loans</h5>
+<p>When planning for your investment strategy, pay attention to economic cycles. The recession stage is the best time to buy, but can also be the scariest since typically, inflation and unemployment are high and demand for rentals decreases. With all of those risk factors considered, this is also when the property will probably be the cheapest. When the economy enters into the recovery phase, vacancies decrease, and rental rates start to increase. The peak phase includes the expansion and contraction stages. Key indicators of the contraction stage include an increase in new projects, rising inflation, and increasing interest rates. Some markets will see increased vacancy rates and a leveling off of prices. Understanding these indicators will help you know how to take advantage of market timing to make the wisest investments.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<img class="alignleft wp-image-643251 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Roh Habibi, The Habibi Group" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-roh-habibi-the-habibi-group.jpeg 194w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-roh-habibi-the-habibi-group-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-roh-habibi-the-habibi-group.jpeg" /><noscript><img class="alignleft wp-image-643251 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-roh-habibi-the-habibi-group.jpeg" alt="Headshot of Roh Habibi, The Habibi Group" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-roh-habibi-the-habibi-group.jpeg 194w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-roh-habibi-the-habibi-group-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<div style="overflow: hidden;">
+<h3>29. Be Aware of Short-term Rental Restrictions</h3>
+<h5>Roh Habibi, Founder &amp; Principal, The Habibi Group</h5>
+<p>With the increase in short-term rental companies like Airbnb and VRBO, many cities have put into place short-term rental restrictions. Your condo association or homeowners’ association (HOA) may have their own restrictions too and may not allow short-term rentals under 30 days. Be aware of any laws and read your HOA agreement before you buy a property to ensure it can be used as a short-term rental.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<p><a href="http://theclose.com/" target="_blank" rel="noopener "><img class="alignleft wp-image-643252 size-full img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Emile L’Eplattenier, Fit Small Business" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-emile-leplattenier-fit-small-busines.jpeg 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-emile-leplattenier-fit-small-busines-150x150.jpeg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-emile-leplattenier-fit-small-busines.jpeg" /><noscript><img class="alignleft wp-image-643252 size-full img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-emile-leplattenier-fit-small-busines.jpeg" alt="Headshot of Emile L’Eplattenier, Fit Small Business" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-emile-leplattenier-fit-small-busines.jpeg 200w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-emile-leplattenier-fit-small-busines-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a></p>
+<div style="overflow: hidden;">
+<h3>30. Factor in Absorption Rate</h3>
+<h5>Emile L’Eplattenier, Managing Editor, <a href="http://theclose.com" target="_blank" rel="noopener ">The Close</a></h5>
+<p>Absorption rate, a measure of how long it will take for all the available homes or rentals in a given area to sell or rent, is an important consideration when buying in new neighborhoods. If there is a glut of available properties in an area, you might want to talk to your real estate agent about why so many other investors are selling at once, or why deals are taking so long to close. Absorption rates of 20% or more mean that homes are selling quickly.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<a href="https://go.performi.com/goto/rentalutions" rel="noopener nofollow" class="fitlink" target="_blank"><img class="alignleft wp-image-643253 img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="Headshot of Ryan Coon, Avail" width="200" height="200" data-lazy-srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-ryan-coon-avail.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-ryan-coon-avail-150x150.png 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-ryan-coon-avail.png" /><noscript><img class="alignleft wp-image-643253 img-fluid" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-ryan-coon-avail.png" alt="Headshot of Ryan Coon, Avail" width="200" height="200" srcset="https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-ryan-coon-avail.png 300w, https://fitsmallbusiness.com/wp-content/uploads/2020/03/headshot-of-ryan-coon-avail-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></noscript></a>
+<div style="overflow: hidden;">
+<h3>31. Know Your Inherited Tenants</h3>
+<h5>Ryan Coon, Founder &amp; CEO, <a href="https://go.performi.com/goto/rentalutions" rel="noopener nofollow" class="fitlink" target="_blank">Avail</a></h5>
+<p>If the property is occupied when you purchase it, make sure there are trustworthy tenants living there. Ask the previous property owner for his or her background checks, credit checks, and rental applications as well as the tenant’s rental payment history.</p>
+</div>
+<div style="clear: both;"></div>
+<hr />
+<h2>Bottom Line</h2>
+<p>Keep our 31 pro tips in mind when buying your first rental property. They may help you avoid costly mistakes. Remember to research the neighborhood you’re going to buy in and know what similar properties have sold for before making an offer.</p>
+</div><footer class="entry-footer"></footer></article><div class="row"><div class="col-md-8 offset-md-3"><div class="author-box"><h4 class="border-bottom pb-4 mb-4">About the Author</h4><div class="author-box-inner"><a href="https://fitsmallbusiness.com/author/ttetreaultfitsmallbusiness-com/"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20127%20127'%3E%3C/svg%3E" class="avatar avatar-127" height="127" width="127" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/08/Tricia-Tetreault.jpg" /><noscript><img alt="" src="https://fitsmallbusiness.com/wp-content/uploads/2020/08/Tricia-Tetreault.jpg" class="avatar avatar-127" height="127" width="127"/></noscript></a><h5><a href="https://fitsmallbusiness.com/author/ttetreaultfitsmallbusiness-com/">Tricia Tetreault</a></h5><p>Tricia Tetreault is a staff writer at Fit Small Business, specializing in Small Business Finance. She holds a Master's in Business Administration from <a href="https://www.champlain.edu/online/masters-degrees/mba/program-overview" rel="nofollow">Champlain College</a> and has spent the majority of her career working in <a href="https://www.champlain.edu/online/masters-degrees/mba/program-overview" rel="nofollow">federal government lending</a>. </p></div></div><div class="fit-omv2-shortcode"></div> <style id="fit-omv2-inline-styles" type="text/css">
+		#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062 .fit-omv2-headline{
+				 font-size: 42px;		}
+		#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062 .fit-omv2-content-content {
+				 font-size: 22px;		}
+		#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062 .fit-omv2-button,
+		#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062 .fit-omv2-email-submit{
+				 font-size: 16px;		}
+		#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062  .fit-omv2-headline{
+						 font-size: 21px;		}
+		#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062  .fit-omv2-content-content{
+						 font-size: 16px;		}
+		#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062  .fit-omv2-button,
+		#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062  .fit-omv2-email-submit{
+				 font-size: 16px;		}
+
+
+		/* Background Color */
+					#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062.fit-omv2.fit-omv2-desktop .fit-omv2-modal,
+			body:not(.wp-admin) #fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062.fit-omv2.fit-omv2-mobile .fit-omv2-modal,
+			body.wp-admin #fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062.fit-omv2.fit-omv2-mobile .fit-omv2-modal,
+			body.wp-admin #fit_omv2_mobile_smartphone_preview_metabox .inside #fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062.fit-omv2.fit-omv2-mobile.fit-omv2-campaign-popup-click .fit-omv2-modal-inner {
+				background-color: rgba(255, 255, 255, 1);
+			}
+		
+		/* Button Color */
+					#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062.fit-omv2.fit-omv2-desktop .fit-omv2-form .fit-omv2-email-submit, 
+			#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062.fit-omv2.fit-omv2-mobile .fit-omv2-email-submit, 
+			#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062.fit-omv2.fit-omv2-desktop .fit-omv2-button-yes, 
+			#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062.fit-omv2.fit-omv2-mobile .fit-omv2-button-yes, 
+			#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062.fit-omv2.fit-omv2-desktop .fit-omv2-form .fit-omv2-email-submit, 
+			#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062.fit-omv2.fit-omv2-mobile .fit-omv2-email-submit, 
+			#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062.fit-omv2.fit-omv2-desktop .fit-omv2-button-yes, 
+			#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062.fit-omv2.fit-omv2-mobile .fit-omv2-button-yes {
+				background-color: rgba(237, 131, 63, 1);
+				border-color: rgba(237, 131, 63, 1);
+				box-shadow: 0 4px 0px 0px rgba(237, 131, 63, 0.7);
+			}
+		
+		/* Text Color */
+					#fit-omv2-desktop-689062.fit-omv2.fit-omv2-desktop.fit-omv2-689062,
+			#fit-omv2-mobile-689062.fit-omv2.fit-omv2-mobile.fit-omv2-689062{
+				color: rgba(0, 0, 0, 1);	
+			}
+			</style>
+<div id="fit-omv2-desktop-689062" class="fit-omv2 fit-omv2-689062 fit-omv2-desktop fit-omv2-cta-email fit-omv2-campaign-inline" data-campaign-id="689062" data-campaign-name="Email Capture In-Line Popup &#8211; Real Estate Investing (BOTTOM)" data-campaign-type="inline" data-cta-type="email" data-desktop-disabled="0">
+<div class="fit-omv2-modal">
+<div class="fit-omv2-modal-inner">
+<span class="fit-omv2-close">&times;</span>
+<div class="fit-omv2-text">
+<div class="fit-omv2-headline">
+Sign Up For Our Real Estate Investing Newsletter!
+</div>
+<div class="fit-omv2-content">
+<div class="fit-omv2-image-before-content">
+</div>
+<div class="fit-omv2-content-content">
+Sign up to receive more well-researched real estate investing articles and topics in your inbox, personalized for you.
+</div>
+<div class="fit-omv2-image-after-content">
+</div>
+</div>
+</div>
+<div class="fit-omv2-form">
+<div class="fit-omv2-image-left-of-form">
+</div>
+<div class="fit-omv2-buttons fit-omv2-buttons-email">
+<div id="fit-omv2-email-form-desktop">
+<label for="email">Email</label>
+<input type="email" class="fit-omv2-email-email" name="email" placeholder="Email Address">
+<div class="invalid-feedback">This email address is invalid.</div>
+<button id="fit-omv2-desktop-email-submit-689062" type="submit" class="fit-omv2-email-submit" name="submit" value="submit">Join The List</button>
+</div>
+</div>
+<div class="fit-omv2-image-right-of-form">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="fit-omv2-mobile-689062" class="fit-omv2 fit-omv2-689062 fit-omv2-mobile fit-omv2-cta-email fit-omv2-campaign-inline" data-campaign-id="689062" data-campaign-name="Email Capture In-Line Popup &#8211; Real Estate Investing (BOTTOM)" data-campaign-type="inline" data-cta-type="email">
+<div class="fit-omv2-modal">
+<div class="fit-omv2-modal-inner">
+<span class="fit-omv2-close">&times;</span>
+<div class="fit-omv2-flex">
+<div class="fit-omv2-modal-text">
+<div class="fit-omv2-headline">
+Sign Up For Our Real Estate Investing Newsletter!
+</div>
+<div class="fit-omv2-content">
+<div class="fit-omv2-content-content">
+</div>
+</div>
+</div>
+<div class="fit-omv2-buttons fit-omv2-buttons-email">
+<div id="fit-omv2-email-form-mobile">
+<label for="email">Email</label>
+<input type="email" class="fit-omv2-email-email" name="email" placeholder="Email Address">
+<button id="fit-omv2-mobile-email-submit-689062" type="submit" class="fit-omv2-email-submit" name="submit" value="submit">Join The List</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="fit_sailthru_related_posts" class="related-posts"><div class="row"></div></div><div class="related-posts"><h4 class="pb-4 mb-4 border-bottom">Related Posts</h4><div class="one-half first has-post-thumbnail"><a href="https://fitsmallbusiness.com/sales-contest-ideas/" class="entry-image"><img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-442843" alt="" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2019/06/11-Great-Sales-Contest-Ideas-to-Motivate-Your-Team-150x150.png" /><noscript><img width="150" height="150" src="https://fitsmallbusiness.com/wp-content/uploads/2019/06/11-Great-Sales-Contest-Ideas-to-Motivate-Your-Team-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-442843" alt="" /></noscript></a><p class="entry-title"><a href="https://fitsmallbusiness.com/sales-contest-ideas/">11 Great Sales Contest Ideas to Motivate Your Team</a></p><p class="entry-meta">02 Jul 2020</p></div><div class="one-half has-post-thumbnail"><a href="https://fitsmallbusiness.com/worst-credit-card-mistakes/" class="entry-image"><img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-679178" alt="young asian woman trying to find money to pay credit card debt" data-lazy-src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/111-150x150.png" /><noscript><img width="150" height="150" src="https://fitsmallbusiness.com/wp-content/uploads/2020/03/111-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-679178" alt="young asian woman trying to find money to pay credit card debt" /></noscript></a><p class="entry-title"><a href="https://fitsmallbusiness.com/worst-credit-card-mistakes/">10 Worst Credit Card Mistakes Everyone Should Avoid</a></p><p class="entry-meta">02 Jul 2020</p></div></div><h2 class="screen-reader-text">Reader Interactions</h2><div class="entry-comments" id="comments"> <h4 class="underline custom-disclaimer">
+Comments (8) &bull; Likes (1)
+<br>
+<span class="custom-disclaimer-text">
+<strong>Disclaimer:</strong> Reviews on FitSmallBusiness.com are the product of independent research by our writers, researchers, and editorial team. User reviews and comments are contributions from independent users not affiliated with FitSmallBusiness.com's editorial team. Banks, issuers, credit card companies, and other product & service providers are not responsible for any content posted on FitSmallBusiness.com. As such, they do not endorse or guarantee any posted comments or reviews.
+</span>
+<a href="#respond" class="button button-invert button-outline"><span class="fit-icomoon fit-icomoon-forum-like ">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32">
+<path fill="#444" d="M25.636 16.727c0.109 0.364 0.145 0.8 0.145 1.2 0 0.873-0.218 1.709-0.655 2.473 0.036 0.255 0.036 0.509 0.036 0.727 0 1.091-0.364 2.218-1.018 3.055 0.036 3.273-2.182 5.164-5.382 5.164h-2.218c-2.436 0-4.727-0.727-6.982-1.527-0.509-0.182-1.891-0.691-2.364-0.691h-4.982c-1.236 0.036-2.218-0.945-2.218-2.145v-11.055c0-1.236 0.982-2.218 2.218-2.218h4.727c0.655-0.436 1.855-2 2.364-2.655 0.582-0.764 1.2-1.491 1.855-2.218 1.018-1.091 0.473-3.818 2.218-5.527 0.4-0.4 0.982-0.655 1.564-0.655 1.782 0 3.527 0.655 4.364 2.327 0.545 1.055 0.618 2.036 0.618 3.2 0 1.2-0.327 2.255-0.836 3.309h3.018c2.364 0 4.4 2 4.4 4.4-0.036 1.018-0.327 2-0.873 2.836zM3.309 22.764c-0.618 0-1.091 0.509-1.091 1.091s0.509 1.091 1.091 1.091 1.091-0.509 1.091-1.091-0.473-1.091-1.091-1.091zM22.073 11.745h-6.073c0-2 1.636-3.491 1.636-5.527 0-2-0.4-3.309-2.764-3.309-1.091 1.127-0.545 3.745-2.218 5.527-0.473 0.509-0.909 1.018-1.309 1.564-0.764 0.982-2.836 3.964-4.182 3.964h-0.545v11.018h0.545c0.982 0 2.545 0.618 3.491 0.945 1.891 0.655 3.855 1.273 5.891 1.273h2.073c1.964 0 3.309-0.764 3.309-2.873 0-0.327-0.036-0.655-0.073-0.982 0.727-0.4 1.127-1.382 1.127-2.182 0-0.4-0.109-0.836-0.327-1.2 0.582-0.545 0.909-1.236 0.909-2.036 0-0.545-0.255-1.345-0.618-1.782 0.8 0 1.309-1.564 1.309-2.218 0-1.164-1.055-2.182-2.182-2.182z"></path>
+</svg>
+</span> Like</a>
+<a href="#respond" class="button button-invert">Ask a Question</a>
+</h4>
+<ol class="comment-list list-unstyled">
+<li class="comment byuser comment-author-charleswalk10 even thread-even depth-1" id="comment-1475754">
+<article id="article-comment-1475754">
+<header class="comment-header">
+<p class="comment-author">
+<span class="comment-author-name">Charles walk</span> </p>
+<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/#comment-1475754">April 1, 2020 at 8:16 pm</a></time></p> </header>
+<div class="comment-content">
+<p>I loved the suggestion to choose a rental property that is close to amenities. That sounds like the best way to get everything that we will need from it, so it should be helpful. We are looking to get a rental property, and it will be important for us to be happy with all of the aspects of it. To be sure that we could get the right one, I will consider the nearby amenities. mcquaidagency.com/homes-for-sale-in-clear-lake-ia</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-login" href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F">Log in to Reply</a></div>
+</article>
+<ul class="children">
+<li class="comment byuser comment-author-anormanfitsmallbusiness-com odd alt depth-2" id="comment-1475774">
+<article id="article-comment-1475774">
+<header class="comment-header">
+<p class="comment-author">
+<span class="comment-author-name">Amanda Norman</span> </p>
+<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/#comment-1475774">April 2, 2020 at 11:59 pm</a></time></p> </header>
+<div class="comment-content">
+<p>Hi Charles,<br />
+Thanks for reading and the nice comment.<br />
+Best of luck with your rental property!<br />
+Mandy, Moderator</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-login" href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F">Log in to Reply</a></div>
+</article>
+</li>
+</ul>
+</li>
+<li class="comment byuser comment-author-justinverhagen5 even thread-odd thread-alt depth-1" id="comment-1468429">
+<article id="article-comment-1468429">
+<header class="comment-header">
+<p class="comment-author">
+<span class="comment-author-name">Justin Verhagen</span> </p>
+<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/#comment-1468429">August 7, 2019 at 7:34 pm</a></time></p> </header>
+<div class="comment-content">
+<p>What is the best smartest way to purchase rental property without money down?</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-login" href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F">Log in to Reply</a></div>
+</article>
+<ul class="children">
+<li class="comment byuser comment-author-anormanfitsmallbusiness-com odd alt depth-2" id="comment-1468488">
+<article id="article-comment-1468488">
+<header class="comment-header">
+<p class="comment-author">
+<span class="comment-author-name">Amanda Norman</span> </p>
+<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/#comment-1468488">August 9, 2019 at 2:23 am</a></time></p> </header>
+<div class="comment-content">
+<p>Hi Justin,<br />
+Thank you for your question. Deciding on the best way to purchase your rental property without money down will depend on a few factors. Our article <a href="https://fitsmallbusiness.com/flipping-houses-with-no-money/">Flipping Houses With No Money Down</a> would be a good place to start.<br />
+Thanks for reading, and best of luck with your purchase!</p>
+<p>Mandy, Moderator</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-login" href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F">Log in to Reply</a></div>
+</article>
+</li>
+</ul>
+</li>
+<li class="comment even thread-even depth-1" id="comment-1450350">
+<article id="article-comment-1450350">
+<header class="comment-header">
+<p class="comment-author">
+<span class="comment-author-name">melissa levy</span> </p>
+<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/#comment-1450350">July 26, 2018 at 2:17 pm</a></time></p> </header>
+<div class="comment-content">
+<p>Great post for one considering buying first rental property<br />
+Joining a landlord association&#8211;never would have thought of that !<br />
+Thank you!!</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-login" href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F">Log in to Reply</a></div>
+</article>
+<ul class="children">
+<li class="comment byuser comment-author-abethellfitsmallbusiness-com odd alt depth-2" id="comment-1450400">
+<article id="article-comment-1450400">
+<header class="comment-header">
+<p class="comment-author">
+<span class="comment-author-name">Allison Bethell</span> </p>
+<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/#comment-1450400">July 27, 2018 at 2:00 am</a></time></p> </header>
+<div class="comment-content">
+<p>Thank you, Melissa. I&#8217;m so glad you enjoyed the article. Check out our real estate investing section for more fresh content.</p>
+<p>All the best,<br />
+Allison</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-login" href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F">Log in to Reply</a></div>
+</article>
+</li>
+</ul>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="comment-1450284">
+<article id="article-comment-1450284">
+<header class="comment-header">
+<p class="comment-author">
+<span class="comment-author-name">Kaitlyn</span> </p>
+<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/#comment-1450284">July 25, 2018 at 10:47 pm</a></time></p> </header>
+<div class="comment-content">
+<p>Excellent points in this article. I would add that finding the correct insurance for your short term rental is imperative. Traditional homeowners insurance does not cover vacation rental business activities. Fortunately there are some great companies out there custom penning insurance for this situation. </p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-login" href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F">Log in to Reply</a></div>
+</article>
+<ul class="children">
+<li class="comment byuser comment-author-lhandrickfitsmallbusiness-com odd alt depth-2" id="comment-1450376">
+<article id="article-comment-1450376">
+<header class="comment-header">
+<p class="comment-author">
+<span class="comment-author-name">Laura Handrick</span> </p>
+<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://fitsmallbusiness.com/buying-your-first-rental-property-tips/#comment-1450376">July 26, 2018 at 10:11 pm</a></time></p> </header>
+<div class="comment-content">
+<p>Kaitlyn,<br />
+You are correct, standard homeowner&#8217;s insurance isn&#8217;t appropriate for rentals. Property owners need dwelling insurance to cover the building, and the renters need renters insurance to cover their personal items and liability. Thanks for pointing that out.<br />
+Laura, AZ Licensed P&#038;C Insurance Agent &#038; Staff Writer</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-login" href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F">Log in to Reply</a></div>
+</article>
+</li>
+</ul>
+</li>
+</ol></div><div class="d-block py-5 mb-5 text-center"><button class="comments-load-more button button-invert" data-page="2">Load More Comments <span class="spinner-border spinner-border-sm" role="status" style="display:none"><span class="sr-only">Loading...</span></span></button></div> <div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Submit Your Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/buying-your-first-rental-property-tips/#respond" style="display:none;">Cancel reply</a></small></h3><p style="margin-bottom:0;"><strong>You must be logged in to comment.</strong> Click a "Log in" button below to connect instantly and comment.</p><a href="https://fitsmallbusiness.com/login/?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F%23respond" class="button button-invert button-center">LOG IN</a> </div>
+</div></div></main></div></div></div><footer class="site-footer footer-widgets">
+<div class="container">
+<div class="row">
+<div class="col-12 col-md-1 offset-md-1">
+<a href="https://fitsmallbusiness.com/" class="site-footer-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Fit Small Business" class="d-block" data-lazy-src="https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/images/logo-2020-suitcase.png"><noscript><img src="https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/images/logo-2020-suitcase.png" alt="Fit Small Business" class="d-block"></noscript></a>
+</div>
+<div class="col-12 col-md-2">
+<section id="black-studio-tinymce-30" class="widget widget_black_studio_tinymce"><h4 class="widget-title widgettitle">Company</h4><div class="widget-wrap"><div class="textwidget"><ul>
+<li><a href="https://fitsmallbusiness.com/about-us/">About Us</a></li>
+<li><a href="https://fitsmallbusiness.com/how-we-make-money/">How We Make Money</a></li>
+<li><a href="https://fitsmallbusiness.com/editorial-policy/">Editorial Policy</a></li>
+<li><a href="https://fitsmallbusiness.com/press/">Press Inquiries</a></li>
+<li><a href="https://fitsmallbusiness.com/were-hiring/">Careers</a></li>
+</ul>
+</div></section>
+</div>
+<div class="col-12 col-md-2">
+<section id="be-social-widget-3" class="widget be-social-widget"><h4 class="widget-title widgettitle">Follow Us</h4><div class="widget-wrap"><p class="socials with-labels"><a href="https://www.facebook.com/FitSmallBusiness"><span class="fit-icomoon fit-icomoon-footer-facebook "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / symbols / facebook">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M4 2H20C21.1046 2 22 2.89543 22 4V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V4C2 2.89543 2.89543 2 4 2ZM4 4V20H20V4H4ZM11.1331 12.0044H13V18H15V12.0044H16.9824V10.0044H15V9C15 8.44772 15.4477 8 16 8H17V6H16C14.3431 6 13 7.34315 13 9V10.0044H11.1331V12.0044Z" fill="black" />
+</g>
+</svg>
+</span> <span class="label">Facebook</span></a> <a href="https://twitter.com/FitSmallBiz"><span class="fit-icomoon fit-icomoon-footer-twitter "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / symbols / twitter">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M21.1195 4.50827L22.5343 4.67349L21.8983 5.948C21.5882 6.56953 21.2778 7.19105 20.967 7.81258C20.9302 7.94422 20.8654 8.05962 20.7697 8.20987C20.7296 8.27265 20.5929 8.47236 20.5865 8.48194C20.5504 8.53608 20.5237 8.57878 20.5045 8.61299V11.0015C20.5045 17.1135 14.5895 20.9974 9.00354 20.9974C7.86051 20.9974 6.99207 20.9427 5.99765 20.7257C4.36115 20.3685 3.14327 19.6587 2.58597 18.418L2.01221 17.1407L3.40659 17.0124C4.66801 16.8964 5.76169 16.6561 6.60159 16.3343C4.29577 15.9635 3.0036 14.9508 3.0036 13.0489V12.0489H4.0036C4.22331 12.0489 4.42143 12.0311 4.59854 11.9983C2.868 10.9636 2.00122 9.30379 2.00122 7.00152C2.00103 6.9034 2.00103 6.90339 2.00044 6.79847C1.99394 5.63803 2.05627 5.01797 2.37395 4.22659C2.57754 3.71941 2.87183 3.24988 3.2679 2.81967L4.02251 2L4.75617 2.83847C7.17394 5.60161 9.56395 7.27795 12.0042 7.48072C12.0146 4.93105 13.9415 3.00152 16.5043 3.00152C17.6991 3.00152 18.7828 3.45501 19.6345 4.27273C20.1006 4.36851 20.5957 4.44709 21.1195 4.50827ZM18.9086 6.16202L18.6021 6.0926L18.3904 5.86028C17.8785 5.29855 17.2359 5.00152 16.5043 5.00152C15.0414 5.00152 14.0041 6.04391 14.0041 7.50152C14.0041 7.73974 13.998 7.88942 13.9683 8.08615C13.8499 8.87116 13.4096 9.50152 12.5041 9.50152C9.50607 9.50152 6.80136 7.89542 4.16389 5.15228C4.02792 5.56561 3.99595 5.99047 4.00041 6.78727C4.00101 6.89384 4.00101 6.89384 4.00122 7.00152C4.00122 9.04953 4.83093 10.1698 6.79547 10.7942L7.49255 11.0158V11.7472C7.49255 12.6342 6.65222 13.4691 5.42268 13.8431C5.98631 14.2708 7.139 14.5015 9.00389 14.5015H10.0039V15.5015C10.0039 16.9343 8.35762 18.0561 5.87075 18.6419C6.68178 18.8903 7.76166 18.9974 9.00354 18.9974C13.618 18.9974 18.5045 15.7888 18.5045 11.0015V8.50152C18.5045 8.20774 18.5897 7.95273 18.7311 7.68759C18.7865 7.58393 18.8474 7.48509 18.9225 7.37237C18.9367 7.35115 18.9892 7.27426 19.0309 7.21279L19.1101 7.05429C19.2386 6.79745 19.3669 6.54061 19.4952 6.28377C19.2958 6.24599 19.1003 6.20541 18.9086 6.16202Z" fill="black" />
+</g>
+</svg>
+</span> <span class="label">Twitter</span></a> <a href="https://www.linkedin.com/company/fitsmallbusiness/"><span class="fit-icomoon fit-icomoon-footer-linkedin "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / symbols / linkedin">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M4 2H20C21.1046 2 22 2.89543 22 4V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V4C2 2.89543 2.89543 2 4 2ZM4 4V20H20V4H4ZM13 9C12.4823 9 11.9353 9.15826 11.4521 9.45215L11 9H10V16H12V12C12 11.4243 12.594 11 13 11H14C14.406 11 15 11.4243 15 12V16H17V12C17 10.1472 15.394 9 14 9H13ZM8 8C8.55228 8 9 7.55228 9 7C9 6.44772 8.55228 6 8 6C7.44772 6 7 6.44772 7 7C7 7.55228 7.44772 8 8 8ZM7 9V16H9V9H7Z" fill="black" />
+</g>
+</svg>
+</span> <span class="label">LinkedIn</span></a> <a href="https://www.youtube.com/channel/UCDqF8Nmn7YDbZvLc4ANxjQA"><span class="fit-icomoon fit-icomoon-footer-youtube "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / symbols / youtube">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M22.0247 18.1282C22.7081 16.9571 23 15.0689 23 11.9972C23 8.93778 22.7108 7.06048 22.0202 5.85803C21.3281 4.60936 20.5073 4.21303 18.8783 4.1179C17.7662 4.04252 15.0023 4 12.0027 4C8.99661 4 6.23145 4.04251 5.111 4.11849C3.49112 4.21326 2.67011 4.61047 1.97193 5.8626C1.29138 7.0609 1 8.94737 1 12.0084C1 15.052 1.29279 16.948 1.97791 18.1424C2.66701 19.3784 3.47493 19.7708 5.1086 19.8855C6.28276 19.9543 9.20442 20 12.0027 20C14.7946 20 17.7149 19.9542 18.8783 19.8863C20.527 19.7708 21.3348 19.3778 22.0247 18.1282ZM18.7524 6.11391C19.7714 6.17346 19.9603 6.26505 20.2833 6.84964C20.7535 7.664 21 9.25771 21 12.0084C21 14.7383 20.7522 16.3408 20.2855 17.141C19.9614 17.7274 19.7738 17.8187 18.7501 17.8904C17.6489 17.9547 14.757 18 12.0027 18C9.24213 18 6.34874 17.9547 5.23703 17.8897C4.22601 17.8186 4.03565 17.7262 3.71873 17.1578C3.24886 16.3385 3 14.727 3 11.9972C3 9.26899 3.24754 7.66639 3.7149 6.84342C4.03675 6.26627 4.22844 6.17353 5.23709 6.11449C6.30508 6.04211 9.04424 6 12.0027 6C14.9547 6 17.6926 6.04212 18.7524 6.11391ZM10 9L15 12L10 15V9Z" fill="black" />
+</g>
+</svg>
+</span> <span class="label">YouTube</span></a></p></section>
+</div>
+<div class="col-12 col-md-2">
+<section id="black-studio-tinymce-75" class="widget widget_black_studio_tinymce"><h4 class="widget-title widgettitle">Partners</h4><div class="widget-wrap"><div class="textwidget"><ul>
+<li><a href="https://reviews.fitsmallbusiness.com/vendor-login">Partner Login</a></li>
+<li><a href="https://fitsmallbusiness.com/about-us/#nf-form-1642-cont">Work With Us</a></li>
+<li><a href="https://fitsmallbusiness.com/media-kit/">Media Kit</a></li>
+</ul>
+</div></section>
+</div>
+<div class="col-12 col-md-4">
+<section id="black-studio-tinymce-38" class="widget widget_black_studio_tinymce"><h4 class="widget-title widgettitle">Contact Us</h4><div class="widget-wrap"><div class="textwidget"><p><i class="icon-pin"></i> 355 Lexington Avenue, 18th Floor<br />
+New York, NY 10017</p>
+<p><i class="icon-email"></i> info@fitsmallbusiness.com</p>
+<p><a href="https://www.bbb.org/us/ny/new-york/profile/business-consultant/fit-small-business-0121-155013/#sealclick" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="border: 0;" alt="Fit Small Business BBB Business Review" data-lazy-src="https://seal-newyork.bbb.org/seals/blue-seal-200-42-bbb-155013.png" /><noscript><img src="https://seal-newyork.bbb.org/seals/blue-seal-200-42-bbb-155013.png" style="border: 0;" alt="Fit Small Business BBB Business Review" /></noscript></a></p>
+</div></section>
+</div>
+</div>
+<div class="row mt-3">
+<div class="col-12 col-md-4 offset-md-2">
+<div id="colophon">&copy Fit Small Business 2020</div>
+</div>
+<div class="col-12 col-md-2">
+<section id="black-studio-tinymce-39" class="widget widget_black_studio_tinymce"><div class="textwidget"><p><a href="https://fitsmallbusiness.com/california-consumer-privacy-act/">California Privacy Rights</a><br />
+<a href="https://fitsmallbusiness.com/privacy-policy/">Privacy</a></p>
+</div></section>
+</div>
+<div class="col-12 col-md-4">
+<section id="black-studio-tinymce-76" class="widget widget_black_studio_tinymce"><div class="widget-wrap"><div class="textwidget"><p><a href="https://fitsmallbusiness.com/terms-of-use/">Terms</a><br />
+<a href="https://fitsmallbusiness.com/sitemap/">Sitemap</a></p>
+</div></div></section>
+</div>
+</div>
+</div>
+</footer>
+<a href="#top" class="back-to-top"><span class="fit-icomoon fit-icomoon-arrow-up ">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<path fill="#444" d="M10.5,7.3l-7.4,7.1c-0.3,0.3-0.7,0.3-1,0c-0.3-0.3-0.3-0.7,0-1L10,5.6c0.3-0.3,0.7-0.3,1,0l7.9,7.8
+	c0.3,0.3,0.3,0.7,0,1s-0.7,0.3-1,0L10.5,7.3z" />
+</svg>
+</span> Back to Top</a>
+<div class="modal fade" id="fit-advertiser-disclosure" tabindex="-1" role="dialog" aria-labelledby="fit-advertister-disclosure-label" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<h5 class="modal-title" id="fit-advertister-disclosure-label">Advertiser Disclosure</h5>
+<p>At Fit Small Business, our mission is to deliver the best answer to people’s questions. The best answers often include products and services. We sometimes make money from our advertising partners when a reader clicks on a link, fills out a form or application, or purchases a product or service. We only partner with companies we believe offer the best products and services for small business owners. And, because we value transparency, we’ve chosen to provide a <a href="https://fitsmallbusiness.com/our-partners/">list of our partners</a>.</p>
+<p>Furthermore, Fit Small Business never allows partners to pay us to guarantee placement within an article that isn’t clearly marked as sponsored and companies cannot pay us for favorable (or unfavorable) reviews or ratings. </p>
+<p>Read more about our commitment to editorial independence <a href="https://fitsmallbusiness.com/editorial-policy/">here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div><script src="https://ak.sail-horizon.com/spm/spm.v1.min.js"></script>
+<script>Sailthru.init({ customerId: 'fb88d73119141455705c501f7c1bbdee', isCustom: true });</script><div class="fit-social-share">
+<a href="https://www.facebook.com/dialog/feed?app_id=140586622674265&amp;display=popup&amp;caption=Buying+rental+property+is+a+significant+investment+and+can+be+a+lucrative+one.+However%2C+take+it+from+the+professionals+that+you%E2%80%99ll+need+to+take+some+precautions.+Do+your+research%2C+take+your+time%2C+and+read+the+tips+we+have+provided+from+nationwide+pros+in+the+real+estate+industry+on+buying+your+first+rental+property.+Here+are...&amp;link=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F" class="fit-ssw-link fit-ssw-facebook" onclick="__gaTracker('send','event','Share Icons','facebook'); return sharepop('https://www.facebook.com/dialog/feed?app_id=140586622674265&display=popup&caption=Buying+rental+property+is+a+significant+investment+and+can+be+a+lucrative+one.+However%2C+take+it+from+the+professionals+that+you%E2%80%99ll+need+to+take+some+precautions.+Do+your+research%2C+take+your+time%2C+and+read+the+tips+we+have+provided+from+nationwide+pros+in+the+real+estate+industry+on+buying+your+first+rental+property.+Here+are...&link=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F','Share on Facebook','580','400')" title="Share on Facebook" target=_share>
+<span class="fit_ssw_icon fit_ssw_facebook_icon">
+<svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" xml:space="preserve">
+<rect width="100%" height="100%" fill="rgb(59, 89, 152)" />
+<path transform="matrix(0.032,0,0,0.032,6,0)" stroke="none" style="fill:#ffffff" d="M 324 0 C 112 0 121 226 121 234 C 121 231 121 370 121 370 L 0 370 L 0 621 L 121 621 L 121 1000 L 377 1000 L 376 621 L 503 621 L 565 371 L 377 371 L 376 276 C 376 276 377 205 456 204 L 502 204 L 565 0 L 324 0 z" />
+</svg> </span>
+</a>
+<a href="https://twitter.com/intent/tweet?text=Buying+rental+property+is+a+significant+investment+and+can+be+a+lucrative+one.+However%2C+take+it+from+the+professionals+that+you%E2%80%99ll+need+to+take+some+precautions.+Do+your+research%2C+take+your+time%2C+and+read+the+tips+we+have+provided+from+nationwide+pros+in+the+real+estate+industry+on+buying+your+first+rental+property.+Here+are...&amp;url=https://fitsmallbusiness.com/buying-your-first-rental-property-tips/" class="fit-ssw-link fit-ssw-twitter" onclick="__gaTracker('send','event','Share Icons','twitter'); return sharepop('https://twitter.com/intent/tweet?text=Buying+rental+property+is+a+significant+investment+and+can+be+a+lucrative+one.+However%2C+take+it+from+the+professionals+that+you%E2%80%99ll+need+to+take+some+precautions.+Do+your+research%2C+take+your+time%2C+and+read+the+tips+we+have+provided+from+nationwide+pros+in+the+real+estate+industry+on+buying+your+first+rental+property.+Here+are...&url=https://fitsmallbusiness.com/buying-your-first-rental-property-tips/','Share on Twitter','500','250')" title="Share on Twitter" target=_share>
+<span class="fit_ssw_icon fit_ssw_twitter_icon">
+<svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" xml:space="preserve">
+<rect width="100%" height="100%" fill="rgb(29, 161, 242)" />
+<path transform="matrix(0.032,0,0,0.032,0,3)" stroke="none" style="fill:#ffffff" d="M 914 156 L 1000 101 L 898 101 L 898 101 L 970 0 L 866 54 C 866 54 866 54 866 54 C 834 21 788 0 737 0 C 639 0 559 79 559 177 C 559 192 561 207 565 221 C 565 221 565 221 565 221 C 439 235 204 22 204 22 C 204 22 170 196 306 309 C 306 309 231 315 146 191 C 146 191 129 315 242 422 C 209 414 169 398 129 366 C 129 366 147 471 231 517 C 185 550 109 577 0 533 C 0 533 88 680 300 722 C 604 781 958 602 892 265 C 907 239 916 209 916 177 C 915 170 915 163 914 156 z M 745 134 C 724 134 707 117 707 96 C 707 75 724 59 745 59 C 766 59 783 75 783 96 C 783 117 766 134 745 134 z" />
+</svg> </span>
+</a>
+<a href="javascript:window.print()" class="fit-ssw-link fit-ssw-print" onclick="__gaTracker('send','event','Share Icons','print'); shareprint(); return false;" title="Print this Page">
+<span class="fit_ssw_icon fit_ssw_print_icon">
+<svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" xml:space="preserve">
+<rect width="100%" height="100%" fill="rgb(115, 138, 141)" />
+<path transform="matrix(0.032,0,0,0.032,0,0)" stroke="none" style="fill:#ffffff" d="M 0 295 L 0 753 L 181 753 L 181 593 L 818 593 L 818 753 L 1000 753 L 1000 295 L 0 295 z M 898 438 C 876 438 857 420 857 397 C 857 374 876 356 898 356 C 921 356 939 374 939 397 C 939 420 921 438 898 438 z M 273 257 L 726 257 L 763 257 L 763 0 L 236 0 L 236 257 z M 726 631 L 273 631 L 236 631 L 236 966 L 457 966 L 542 966 L 763 966 L 763 631 L 726 631 z M 670 884 L 329 884 L 329 846 L 670 846 L 670 884 z M 670 808 L 329 808 L 329 770 L 670 770 L 670 808 z M 670 732 L 329 732 L 329 694 L 670 694 L 670 732 z" />
+</svg> </span>
+</a>
+<a href="mailto:?subject=31%20Tips%20for%20Buying%20Your%20First%20Rental%20Property%20From%20the%20Pros&amp;body=Check out this article from Fit Small Business%0D%0A%0D%0ABuying%20rental%20property%20is%20a%20significant%20investment%20and%20can%20be%20a%20lucrative%20one.%20However%2C%20take%20it%20from%20the%20professionals%20that%20you%E2%80%99ll%20need%20to%20take%20some%20precautions.%20Do%20your%20research%2C%20take%20your%20time%2C%20and%20read%20the%20tips%20we%20have%20provided%20from%20nationwide%20pros%20in%20the%20real%20estate%20industry%20on%20buying%20your%20first%20rental%20property.%20Here%20are...%0D%0A%0D%0Ahttps://fitsmallbusiness.com/buying-your-first-rental-property-tips/" class="fit-ssw-link fit-ssw-email" onclick="__gaTracker('send','event','Share Icons','email');" title="Email this page">
+<span class="fit_ssw_icon fit_ssw_email_icon">
+<svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" xml:space="preserve">
+<rect width="100%" height="100%" fill="rgb(132, 132, 132)" />
+<path transform="matrix(0.032,0,0,0.032,0,5)" stroke="none" style="fill:#ffffff" d="M 500 0 L 0 0 L 0 79 L 500 466 L 1000 79 L 1000 0 z M 500 500 C 492 500 485 497 479 493 L 0 121 L 0 666 L 1000 666 L 1000 121 L 520 493 C 514 497 507 500 500 500 z" />
+</svg> </span>
+</a>
+</div>
+<script type="text/javascript">
+		function shareprint() {
+			setTimeout(
+					function () {
+						window.print();
+					}, 100
+			);
+		}
+	</script>
+<script type="text/javascript">
+		function sharepop(url, title, w, h) {
+
+			// Fixes dual-screen position                         Most browsers      Firefox
+			var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+			var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+
+			var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+			var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+			var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+			var top = ((height / 2) - (h / 2)) + dualScreenTop;
+			var newWindow = window.open(url, title, 'width=' + w + ', height=' + h + ', left=' + left + ', top=' + top);
+			if (window.focus) {
+				newWindow.focus()
+			}
+			return false;
+		}
+	</script>
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='fit-social-share-style' href='https://fitsmallbusiness.com/wp-content/plugins/fit-social-share/css/style.css?ver=5.4.1' type='text/css' media='all' /> <script type="text/javascript">
+	// `rel=preload` Polyfill for <link> elements
+	var DOMTokenListSupports = function (tokenList, token) {
+		if (!tokenList || !tokenList.supports) {
+			return;
+		}
+		try {
+			return tokenList.supports(token);
+		}
+		catch (e) {
+			if (e instanceof TypeError) {
+				// console.log("The DOMTokenList doesn't have a supported tokens list");
+			}
+			else {
+				// console.error("That shouldn't have happened");
+			}
+		}
+	};
+	var linkSupportsPreload = DOMTokenListSupports(document.createElement('link').relList, 'preload');
+	if (!linkSupportsPreload) {
+		// Dynamically load the things that relied on preload.
+		var links = document.getElementsByTagName('link');
+		for (var i = 0; i < links.length; i++) {
+			var link = links[i];
+			// qualify links to those with rel=preload and as=style attrs
+			if (link.rel === 'preload' && link.getAttribute('as') === 'style') {
+				// prevent re-running on link
+				link.setAttribute('onload', '');
+				link.setAttribute('rel', 'stylesheet');
+			}
+		}
+	}
+	</script>
+<style>html .async-hide { opacity: 0 !important} </style>
+
+<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '817028472079700');
+	fbq('track', 'PageView');
+	fbq('track', 'ViewContent', {
+		content_name: '/buying-your-first-rental-property-tips/',
+		content_category: 'Real Estate Investing',
+		sub_category: 'Real Estate Investing,Tip List Rental Property'
+	});
+
+	</script>
+<script>
+fbq('trackCustom', 'ViewTag', {
+	 		    tag_name: 'Real Estate Investing'
+	 		});
+fbq('trackCustom', 'ViewTag', {
+	 		    tag_name: 'Tip List'
+	 		});
+</script>
+<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=817028472079700&ev=PageView&noscript=1"
+	/>
+	</noscript>
+
+<div id="fit-header-subscribe-modal" class="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content">
+<div class="modal-body">
+<div class="px-lg-5 mx-lg-5 text-center">
+<h5 class="modal-title text-center">Join Fit Small Business</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<form id="fit-header-subscribe-form" action="https://fitsmallbusiness.com/wp-admin/admin-ajax.php" method="post">
+<div class="px-lg-5 mx-lg-5">
+<p class="text-center"><em>Sign up to receive more well-researched small business articles and topics in your inbox, personalized for you. Select the newsletters you’re interested in below.</em></p>
+<div class="row">
+<div class="col-12 col-md-6">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Accounting" id="fit_header_checkbox_Accounting" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_Accounting">
+Accounting
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Ecommerce" id="fit_header_checkbox_Ecommerce" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_Ecommerce">
+Ecommerce
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Marketing" id="fit_header_checkbox_Marketing" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_Marketing">
+Marketing
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Sales" id="fit_header_checkbox_Sales" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_Sales">
+Sales
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Financing" id="fit_header_checkbox_Financing" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_Financing">
+Financing
+</label>
+</div>
+</div>
+<div class="col-12 col-md-6">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - HR" id="fit_header_checkbox_HumanResources" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_HumanResources">
+Human Resources
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Retail" id="fit_header_checkbox_Retail" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_Retail">
+Retail
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Real Estate" id="fit_header_checkbox_RealEstateAgents" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_RealEstateAgents">
+Real Estate (Agents)
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Real Estate Investing" id="fit_header_checkbox_RealEstateInvesting" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_RealEstateInvesting">
+Real Estate Investing
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="Newsletter - Starting a Business" id="fit_header_checkbox_StartingaBusiness" name="fit_header_list_checkbox[]">
+<label class="form-check-label" for="fit_header_checkbox_StartingaBusiness">
+Starting a Business
+</label>
+</div>
+</div>
+</div>
+<div class="form-group text-center mt-3">
+<label for="fit_header_email" class="sr-only">Your Email Address</label>
+<input type="email" name="fit_header_email" class="form-control" placeholder="Your Email Address..." required />
+</div>
+</div>
+<div class="text-center">
+<input type="hidden" name="action" value="fit_header_subscribe" />
+<input type="hidden" id="fit_header_subscribe_nonce" name="fit_header_subscribe_nonce" value="0ed97425aa" /><input type="hidden" name="_wp_http_referer" value="/buying-your-first-rental-property-tips/" /> <input type="submit" class="button" value="Sign Me Up" />
+</div>
+</form>
+<div class="modal-response text-center mx-5"></div>
+</div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fitsailthrurelated = {"id":"8bb26b86-72c1-11ea-940b-002590d1a2f6"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/plugins/fit-sailthru/lib/../assets/fit-sailthru-related-posts.js?ver=0.2.1'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/popper.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/util.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/collapse.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/modal.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/dropdown.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/tab.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/tooltip.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/popover.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/jquery.matchHeight.min.js?ver=0.4.21'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var global = {"ajax_url":"https:\/\/fitsmallbusiness.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/source/global.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/track.min.js?ver=0.4.21'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fsb_comments = {"ajax_url":"https:\/\/fitsmallbusiness.com\/wp-admin\/admin-ajax.php","post_id":"156130","security":"aa24c2a358","status":"","redirect":"https:\/\/fitsmallbusiness.com\/wp-login.php?redirect_to=https%3A%2F%2Ffitsmallbusiness.com%2Fbuying-your-first-rental-property-tips%2F"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/themes/fit-fresh-theme/assets/js/comment-infinite-load.min.js?ver=0.4.21'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-includes/js/wp-embed.min.js?ver=5.4.1'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/plugins/fit-campaign-plugin/assets/js/dist/ouibounce.min.js?ver=0.5.9'></script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/plugins/fit-campaign-plugin/assets/js/dist/jquery.stickybits.min.js?ver=0.5.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fit_campaigns_ajax = {"ajax_url":"https:\/\/fitsmallbusiness.com\/wp-admin\/admin-ajax.php","context":"live","aggressive":"true","post_id":"156130","post_category":"Real Estate Investing","min_width":"320","desktop_triggers":["exit"]};
+/* ]]> */
+</script>
+<script type='text/javascript' defer src='https://fitsmallbusiness.com/wp-content/plugins/fit-campaign-plugin/assets/js/dist/fit-campaigns-public.min.js?ver=0.5.9'></script>
+<script>window.lazyLoadOptions = {
+                elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",
+                data_src: "lazy-src",
+                data_srcset: "lazy-srcset",
+                data_sizes: "lazy-sizes",
+                class_loading: "lazyloading",
+                class_loaded: "lazyloaded",
+                threshold: 300,
+                callback_loaded: function(element) {
+                    if ( element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible" ) {
+                        if (element.classList.contains("lazyloaded") ) {
+                            if (typeof window.jQuery != "undefined") {
+                                if (jQuery.fn.fitVids) {
+                                    jQuery(element).parent().fitVids();
+                                }
+                            }
+                        }
+                    }
+                }};
+        window.addEventListener('LazyLoad::Initialized', function (e) {
+            var lazyLoadInstance = e.detail.instance;
+
+            if (window.MutationObserver) {
+                var observer = new MutationObserver(function(mutations) {
+                    var image_count = 0;
+                    var iframe_count = 0;
+                    var rocketlazy_count = 0;
+
+                    mutations.forEach(function(mutation) {
+                        for (i = 0; i < mutation.addedNodes.length; i++) {
+                            if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
+                                return;
+                            }
+
+                           if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
+                                return;
+                            }
+
+                            images = mutation.addedNodes[i].getElementsByTagName('img');
+                            is_image = mutation.addedNodes[i].tagName == "IMG";
+                            iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+                            is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+                            rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
+
+                            image_count += images.length;
+			                iframe_count += iframes.length;
+			                rocketlazy_count += rocket_lazy.length;
+
+                            if(is_image){
+                                image_count += 1;
+                            }
+
+                            if(is_iframe){
+                                iframe_count += 1;
+                            }
+                        }
+                    } );
+
+                    if(image_count > 0 || iframe_count > 0 || rocketlazy_count > 0){
+                        lazyLoadInstance.update();
+                    }
+                } );
+
+                var b      = document.getElementsByTagName("body")[0];
+                var config = { childList: true, subtree: true };
+
+                observer.observe(b, config);
+            }
+        }, false);</script><script data-no-minify="1" async src="https://fitsmallbusiness.com/wp-content/plugins/rocket-lazy-load/assets/js/12.0/lazyload.min.js"></script></body></html>
